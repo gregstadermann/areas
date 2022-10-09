@@ -1,0 +1,5 @@
+---
+title: "Wehnimer's Landing Town"
+info:
+  respawnInterval: 60
+instanced: player

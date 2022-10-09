@@ -1,0 +1,77 @@
+---
+- id: tsc
+  title: Town Square Central
+  coordinates: [0, 0, 0]
+  description: "This is the heart of the main square of Wehnimer's Landing.  The impromptu shops of the bazaar are clustered around this central gathering place, where townsfolk, travellers, and adventurers meet to talk, conspire or raise expeditions to the far-flung reaches of Elanith.  At the north end of the space, an old well, with moss-covered stones and a craggy roof, is shaded by a strong, robust tree.  The oak is tall and straight, and it is apparent that the roots run deep."
+  npcs: [mapped:squirrel]
+  exits:
+    - direction: down
+      roomId: "limbo:zosotower"
+- id: tsw
+  title: Town Square, West
+  coordinates: [-1, 0, 0]
+  description: "Here in the midst of the town stretches the cobblestoned main bazaar, its serpentine lanes abuzz with traders bartering, bickering, and hawking their wares.  The freewheeling vendors in the bazaar provide a lively alternative to the somewhat stodgier merchants whose shops border the square.  The gilded but peeling stone facade of the First Elanith Bank dominates this side of the square."
+- id: tse
+  title: Town Square, East
+  coordinates: [1, 0, 0]
+  description: "Here in the center of a broad plaza near the commercial area of the bazaar stands the impressive facade of the slate-roofed Moot Hall, where the citizens of Wehnimer's Landing hold various official, religious and social functions.  Facing the square are some of the town's more prosperous and bustling shops."
+- id: tsnw
+  title: Town Square, Northwest
+  coordinates: [-1, 1, 0]
+  description: "This corner of the square is lively and hectic.  A number of representatives of the Landing's population, including several elven loggers and a party of rough-looking dwarves, loiter around the door of the Raging Thrak Inn, where the rowdy cheers of patrons and voices raised in songs of many sorts, from snatches of heroic ballads to blushingly bawdy tunes, beckon you to enter.  You also see an ivy-covered white monir tower, a polished granite statue and the Raging Thrak Inn."
+  exits:
+    - direction: inn
+      roomId: "wehnimers-landing-town:raging-thrak-inn-barroom"
+- id: tsne
+  title: Town Square, Northeast
+  coordinates: [1, 1, 0]
+  description: "The entrance to Tykel's Arms, its heavy door bounded by iron-barred windows, dominates this corner of the square.  All manner of citizens pass by, moving among the solid, multistoried wooden buildings that surround the bazaar.  Just to the southwest can be seen the tree-shaded heart of the square, where citizens and adventurers gather for socializing, healing and rest.  You also see a narrow alleyway."
+- id: tsse
+  title: Town Square, Southeast
+  coordinates: [1, -1, 0]
+  description: "Foot and wagon traffic swarms off in all directions here, some going to the large intersection with South Ring Road, others crisscrossing the square via the bazaar. Men and women carrying neatly tied parcels or sacks and coils of rope slung over their arms emerge from the wooden facade of the old general store."
+- id: tssw
+  title: Town Square, Southwest
+  coordinates: [-1, -1, 0]
+  description: "This corner of the square seems somewhat subdued.  Townsfolk pass through on their way to the shops, the bazaar, or the main well at the center of the square.  Others hurry past, anxious to get home or go on about their business."
+
+- id: bathhouse
+  title: Wehnimer's, Talon St.
+  coordinates: [-1, 2, 0]
+  description: "The street runs between the northern palisade and the central square to the south and east.  The traffic is varied here, as shoppers, traders, travelers and merchants mix with the ever-present and watchful militiamen.  The pristine walls of the Stone Baths occupy nearly the entire block.  You also see a brightly lit small painted wagon and a tall black bulwark tower."
+- id: wl-north-ring-road-01
+  title: Wehnimer's, Land's End Rd.
+  coordinates: [-1, 3, 0]
+  description: "The road turns gradually at this point as it forms the northwest corner of the city.  The main path curves along the north and west walls, and another leads south between the buildings.  The massive oak and modwir logs of the city palisade tower overhead.  You also see an old weathered cart with some stuff on it."
+- id: wl-north-ring-road-02
+  title: Wehnimer's, North Ring Rd.
+  coordinates: [0, 3, 0]
+  description: "The cobbled road girds the town along the inner side of the northern palisade.  Just to the north stand the twin sentinels of the gate's guardtowers.  Guardsmen come and go through the main gates, keeping a close eye on the people of all races who move to and fro.  Opposite the gates, you see the shop of Dakris the Furrier."
+- id: lands-end-road
+  title: Wehnimer's, Land's End Rd.
+  coordinates: [0, 4, 0]
+  description: "Vigilant guardsmen scrutinize the citizens and travelers arriving and departing through the wide gates spanning the land route into Wehnimer's Landing.  The frenetic pace of the city to the south is a far cry from the deceptive calm of the wilds of Elanith outside.  Two daunting towers survey the countryside and protect the town, flanking the road to the east and west."
+
+- id: raging-thrak-inn-barroom
+  title: Raging Thrak Inn, Barroom
+  exits:
+    - roomId: "wehnimers-landing-town:tsnw"
+      direction: out
+      leaveMessage: "steps out the door."
+    - roomId: "wehnimers-landing-town:raging-thrak-inn-dining-room"
+      direction: north
+    - roomId: "wehnimers-landing-town:raging-thrak-inn-trophy-room"
+      direction: west
+  description: "A long and polished wooden bar occupies the whole north wall of the tavern here in The Raging Thrak, which is named for the fiery proprietor.  Hard wooden chairs, tables and benches are spaced liberally throughout the room.  The tavern does good business, and seems to be at least half full, no matter what time of day."
+- id: raging-thrak-inn-dining-room
+  title: Raging Thrak Inn, Dining Room
+  description: "Loud and abusive noises emanate from behind the swinging kitchen doors, much to the laughing delight of some of the customers, and to the chagrin of others.  Tapestries hanging from the walls depict soothing idyllic wildlife scenes.  Hard wooden tables and chairs are placed evenly, allowing enough space for the cook and wait servants to pass."
+  exits:
+    - roomId: "wehnimers-landing-town:raging-thrak-inn-barroom"
+      direction: south
+- id: raging-thrak-inn-trophy-room
+  title: Raging Thrak Inn, Trophy Room
+  description: "Tiny smudges of soot mar the fieldstones used to create the grand fireplace in this cozy room.  A collection of plaques hangs above an immense grey marble mantel cluttered with trophy cups and bowls.  Fashioned from a single stone slab, the hearth extends to an impressive black bear rug with its maw frozen in a silent roar.  Several overstuffed wingback chairs, each covered in deep jewel-tone chintz, are scattered about the room.  Against the back wall, a tall glass-front curio houses several ancient mementos and a thrak hide curtain hangs nearby."
+  exits:
+    - roomId: "wehnimers-landing-town:raging-thrak-inn-barroom"
+      direction: east
