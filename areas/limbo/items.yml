@@ -1,7 +1,7 @@
 - id: "rustysword"
-  name: "Rusty Sword"
+  name: "rusty sword"
   type: WEAPON
-  roomDesc: "Rusted Sword"
+  roomDesc: "a rusty sword"
   keywords: [ "sword", "rusty", "metal", "rusted" ]
   description: "An arm's-length, jagged metal sword discolored with red corrosion. The worn leather grip barely held on by fraying thread."
   metadata:
@@ -15,8 +15,8 @@
     stats:
       critical: 1
 - id: "sliceofcheese"
-  name: "Slice of Cheese"
-  roomDesc: "A moldy slice of cheese"
+  name: "slice of cheese"
+  roomDesc: "a moldy slice of cheese"
   keywords: [ "slice", "cheese", "moldy" ]
   description: "A yellow, slightly moldy slice of cheese. Only a rat could find this appetizing."
   behaviors:
@@ -24,8 +24,8 @@
       duration: 240
 - id: "woodenchest"
   type: CONTAINER
-  name: "Wooden Chest"
-  roomDesc: "A wooden chest rests in the corner, its hinges badly rusted."
+  name: "wooden chest"
+  roomDesc: "a wooden chest"
   keywords: [ "wooden", "chest" ]
   description: "Time has not been kind to this chest. It seems to be held together solely by the dirt and rust."
   items: [ "limbo:rustysword", "limbo:leathervest", "limbo:potionhealth1", "limbo:potionstrength1" ]
@@ -34,9 +34,9 @@
   metadata:
     noPickup: true
 - id: "scraps"
-  name: "Scraps"
+  name: "scraps"
   quality: poor
-  roomDesc: "Scraps from a Training Dummy"
+  roomDesc: "some scraps"
   keywords: [ "dummy", "scraps" ]
   description: "Splintered, shattered, and generally destroyed remains of a training dummy"
   metadata:
@@ -44,9 +44,9 @@
       value: 5
       currency: gold
 - id: trainingsword
-  name: "Training Sword"
+  name: "training sword"
   type: WEAPON
-  roomDesc: "Training Sword"
+  roomDesc: "a training sword"
   keywords: ["sword", "training", "iron"]
   description: "A hefty iron blade. Not the sharpest sword in the world but it will get the job done."
   metadata:
@@ -65,9 +65,9 @@
       value: 30
       currency: gold
 - id: leathervest
-  name: "Leather Vest"
+  name: "leather vest"
   type: ARMOR
-  roomDesc: "Leather Vest"
+  roomDesc: "a leather vest"
   keywords: ["leather", "vest"]
   description: "A plain leather vest. Better than nothing."
   metadata:
@@ -82,7 +82,7 @@
       currency: gold
 - id: potionhealth1
   name: "Potion of Health I"
-  roomDesc: "Potion of Health I"
+  roomDesc: "a green-colored potion"
   keywords: [ "potion", "health" ]
   type: POTION
   metadata:
@@ -103,7 +103,7 @@
         stat: "health"
 - id: potionstrength1
   name: "Potion of Strength I"
-  roomDesc: "Potion of Strength I"
+  roomDesc: "a pungent red potion"
   keywords: [ "potion", "strength" ]
   type: POTION
   metadata:
@@ -124,7 +124,7 @@
 - id: bladeofranvier
   name: "Blade of Ranvier"
   type: WEAPON
-  roomDesc: "Blade of Ranvier"
+  roomDesc: "a massive blade"
   keywords: ["sword", "blade", "ranvier"]
   description: "The blade shines a brilliant silver. Holding it you feel as if you could take on the world."
   script: "ranvier-blade"
@@ -143,9 +143,9 @@
       stamina: 2
       critical: 3
 - id: woodenshield
-  name: "Wooden Shield"
+  name: "wooden shield"
   type: ARMOR
-  roomDesc: "Wooden Shield"
+  roomDesc: "a wooden shield"
   keywords: ["shield", "wooden"]
   description: "A rather uninteresting looking wooden shield. A rusted metal band barely hold its together and the leather arm band is nearly torn."
   metadata:
@@ -159,16 +159,16 @@
       value: 30
       currency: gold
 - id: test_key
-  name: "Oddly-shaped Key"
+  name: "oddly shaped key"
   keywords: ["key", "odd", "oddly", "shaped"]
-  roomDesc: "A strange looking key"
+  roomDesc: "an odd-looking key"
   description: "This key seems overly complex with numerous grooves."
   metadata:
     quality: common
 - id: locked_chest
   type: CONTAINER
-  name: "Locked Chest"
-  roomDesc: "A wooden chest rests open in the corner, its hinges badly rusted."
+  name: "locked wooden chest"
+  roomDesc: "a wooden chest"
   keywords: [ "locked", "wooden", "chest" ]
   items: [ "limbo:rustysword" ]
   closed: true
@@ -177,3 +177,78 @@
   maxItems: 5
   metadata:
     noPickup: true
+- id: "starcloak"
+  type: CONTAINER
+  name: "a mysterious star-covered cloak"
+  roomDesc: "a mysterious star-covered cloak"
+  keywords: [ "start", "cloak" ]
+  description: "Time has worn this cloak of stars"
+  items: [ ]
+  closed: true
+  maxItems: 10
+  metadata:
+    quality: epic
+    slot: "back"
+    level: 20
+    itemLevel: 20
+    stats:
+      armor: 500
+    sellable:
+      value: 3000000000
+      currency: gold
+    noPickup: false
+- id: "zosostaff"
+  name: "an ancient gnarled staff"
+  type: WEAPON
+  roomDesc: "an ancient gnarled staff"
+  keywords: [ "staff", "gnarled", "ancient"]
+  description: "an ancient gnarled staff"
+  metadata:
+    level: 1
+    slot: 'wield'
+    itemLevel: 20
+    quality: epic
+    minDamage: 1
+    maxDamage: 100
+    speed: 5.0
+    stats:
+      critical: 20
+- id: "broadsword"
+  name: "a broadsword"
+  type: WEAPON
+  roomDesc: "a broadsword"
+  keywords: [ "broadsword"]
+  description: "A broadsword"
+  metadata:
+    level: 1
+    slot: 'hands'
+    itemLevel: 1
+    quality: common
+    minDamage: 4
+    maxDamage: 20
+    speed: 8.00
+    stats:
+      critical: 1
+- id: zoso_key
+  name: "weird key"
+  keywords: ["key", "weird" ]
+  roomDesc: "a weird looking key"
+  description: "Zoso's Tower is enscribed upon the key"
+  metadata:
+    quality: epic
+- id: zoso_robes
+  name: "a set of flowing dark blue robes"
+  type: ARMOR
+  roomDesc: "a set of flowing dark blue robes"
+  keywords: ["robe", "robes"]
+  description: "A set of flowing dark blue robes"
+  metadata:
+    quality: epic
+    slot: "chest"
+    level: 1
+    itemLevel: 1
+    stats:
+      armor: 2000
+    sellable:
+      value: 300000000
+      currency: gold

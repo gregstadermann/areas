@@ -1,6 +1,6 @@
 - id: rat
   keywords: ['rat']
-  name: A Rat
+  name: "a rat"
   level: 2
   description: "The rat's beady red eyes dart frantically, its mouth foaming as it scampers about."
   script: 'rat'
@@ -16,20 +16,20 @@
     energy: 100
 - id: wiseoldman
   keywords: ["wise", "old", "man"]
-  name: "Wise Old Man"
+  name: "an old man"
   level: 99
   script: 'old-man'
   description: "A wise looking old man sits on the ground with legs crossed."
 - id: puppy
   keywords: ["puppy", "dog", "loyal", "wide", "eyed", "wide-eyed"]
-  name: A Puppy
+  name: "a puppy"
   description: "A wide-eyed puppy stares up at you."
   level: 1
   script: 'puppy'
 - id: trainingdummy
   keywords: ["dummy", "target", "practice"]
   level: 2
-  name: "Training Dummy"
+  name: "a training dummy"
   attributes:
     health: 100
     strength: 10
@@ -56,7 +56,7 @@
     large red and white bullseye painted on its chest. The dummy has no eyes and mindlessly meanders about the area.
 - id: bossdummy
   keywords: ["boss", "target", "dummy", "practice"]
-  name: "Boss Training Dummy"
+  name: "the boss training dummy"
   level: 5
   description: >-
     This dummy is significantly larger than the others. Bright red with a monstrous figure it lumbers around the area
@@ -107,7 +107,7 @@
 - id: aggro-player-test
   keywords: ["test", "aggro", "dummy"]
   level: 2
-  name: "Player-aggressive Training Dummy"
+  name: "a player-aggressive training dummy"
   description: >-
     This NPC is aggressive towards players but not other NPCs. Be careful.
   attributes:
@@ -120,7 +120,7 @@
 - id: aggro-npc-test
   keywords: ["test", "aggro", "dummy"]
   level: 2
-  name: "Self-hating Training Dummy"
+  name: "a self-hating training dummy"
   description: >-
     This NPC is aggressive towards other NPCs but not to the player.
   attributes:
