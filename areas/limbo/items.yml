@@ -81,7 +81,7 @@
       value: 30
       currency: gold
 - id: potionhealth1
-  name: "Potion of Health I"
+  name: "a pink colored potion"
   roomDesc: "a green-colored potion"
   keywords: [ "potion", "health" ]
   type: POTION
@@ -203,6 +203,7 @@
   roomDesc: "an ancient gnarled staff"
   keywords: [ "staff", "gnarled", "ancient"]
   description: "an ancient gnarled staff"
+  script: "zoso-staff"
   metadata:
     level: 1
     slot: 'wield'
@@ -210,7 +211,7 @@
     quality: epic
     minDamage: 1
     maxDamage: 100
-    speed: 5.0
+    speed: 3.0
     stats:
       critical: 20
 - id: "broadsword"
