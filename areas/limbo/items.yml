@@ -5,6 +5,7 @@
   keywords: [ "sword", "rusty", "metal", "rusted" ]
   description: "An arm's-length, jagged metal sword discolored with red corrosion. The worn leather grip barely held on by fraying thread."
   metadata:
+    type: 'edged'
     level: 1
     slot: 'wield'
     itemLevel: 1
@@ -50,6 +51,7 @@
   keywords: ["sword", "training", "iron"]
   description: "A hefty iron blade. Not the sharpest sword in the world but it will get the job done."
   metadata:
+    type: 'edged'
     quality: rare
     slot: "wield"
     itemLevel: 10
@@ -102,8 +104,8 @@
         restores: 30
         stat: "health"
 - id: potionstrength1
-  name: "Potion of Strength I"
-  roomDesc: "a pungent red potion"
+  name: "hazy orange potion"
+  roomDesc: "a hazy orange potion"
   keywords: [ "potion", "strength" ]
   type: POTION
   metadata:
@@ -129,6 +131,7 @@
   description: "The blade shines a brilliant silver. Holding it you feel as if you could take on the world."
   script: "ranvier-blade"
   metadata:
+    type: 'edged'
     quality: epic
     slot: "wield"
     itemLevel: 15
@@ -205,6 +208,7 @@
   description: "an ancient gnarled staff"
   script: "zoso-staff"
   metadata:
+    type: 'blunt'
     level: 1
     slot: 'wield'
     itemLevel: 20
@@ -221,6 +225,7 @@
   keywords: [ "broadsword"]
   description: "A broadsword"
   metadata:
+    type: 'edged'
     level: 1
     slot: 'hands'
     itemLevel: 1

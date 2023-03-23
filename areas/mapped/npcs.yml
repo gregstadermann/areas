@@ -1,7 +1,7 @@
 ---
 - id: squirrel
   keywords: ['squirrel']
-  name: A Squirrel
+  name: a squirrel
   level: 2
   description: "A furry little squirrel"
   behaviors:
