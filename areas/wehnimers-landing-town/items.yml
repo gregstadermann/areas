@@ -1,0 +1,68 @@
+- id: leatherjerkin
+  name: "leather jerkin"
+  type: ARMOR
+  roomDesc: "a leather jerkin"
+  keywords: ["leather", "jerkin"]
+  description: "A plain leather jerkin. Better than nothing."
+  metadata:
+    quality: common
+    slot: "chest"
+    level: 1
+    itemLevel: 1
+    AT: 5,
+    stats:
+      armor: 25
+    sellable:
+      value: 30
+      currency: gold
+- id: leatherbreastplate
+  name: "leather breastplate"
+  type: ARMOR
+  roomDesc: "a leather breastplate"
+  keywords: ["leather", "breastplate", "plate"]
+  description: "A plain leather breastplate."
+  metadata:
+    quality: common
+    slot: "chest"
+    level: 1
+    itemLevel: 1
+    AT: 9,
+    stats:
+      armor: 50
+    sellable:
+      value: 100
+      currency: gold
+- id: metalbreastplate
+  name: "metal breastplate"
+  type: ARMOR
+  roomDesc: "a metal breastplate"
+  keywords: ["metal", "breastplate", "plate"]
+  description: "A metal breast- plate plus smaller plates covering the torso to mid-thigh and part of the upper arms."
+  metadata:
+    quality: common
+    slot: "chest"
+    level: 1
+    itemLevel: 1
+    AT: 17,
+    stats:
+      armor: 100
+    sellable:
+      value: 1000
+      currency: gold
+- id: chainshirt
+  name: "chain shirt"
+  type: ARMOR
+  roomDesc: "a chain shirt"
+  keywords: ["shirt", "chain"]
+  description: "A chain mail shirt covering the torso to mid-thigh and half of the upper arms."
+  metadata:
+    quality: common
+    slot: "chest"
+    level: 1
+    itemLevel: 1
+    AT: 13,
+    stats:
+      armor: 100
+    sellable:
+      value: 750
+      currency: gold

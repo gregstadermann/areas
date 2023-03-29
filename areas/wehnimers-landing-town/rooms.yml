@@ -5,6 +5,8 @@
   description: "This is the heart of the main square of Wehnimer's Landing.  The impromptu shops of the bazaar are clustered around this central gathering place, where townsfolk, travellers, and adventurers meet to talk, conspire or raise expeditions to the far-flung reaches of Elanith.  At the north end of the space, an old well, with moss-covered stones and a craggy roof, is shaded by a strong, robust tree.  The oak is tall and straight, and it is apparent that the roots run deep."
   npcs: [mapped:squirrel]
   exits:
+    - direction: well
+      roomId: "wehnimers-landing-town:old-well"
     - direction: down
       roomId: "limbo:zosotower"
 - id: tsw
@@ -75,3 +77,11 @@
   exits:
     - roomId: "wehnimers-landing-town:raging-thrak-inn-barroom"
       direction: east
+- id: old-well
+  title: Town Well
+  description: "iThe old well is made of flat stones built up around a circular opening. A slate roof overhangs the opening, keeping the drinking water clear and refreshing. Several skin water buckets, with long ropes attached, are scattered on the hard-packed earth surrounding the well. "
+  exits:
+    - direction: out
+      roomId: "wehnimers-landing-town:tsc"
+    - direction: rope
+      roomId: "wehnimers-landing-catacombs:beneath-well"

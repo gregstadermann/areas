@@ -1,0 +1,27 @@
+- id: giantrat
+  keywords: ["rat", "giant"]
+  level: 2
+  name: "a giant rat"
+  attributes:
+    health: 100
+    strength: 10
+    AS: 30
+    DS: 0
+  behaviors:
+    combat: true
+    lootable:
+      # currencies is a list of currencies this npc can possibly drop and the amount range
+      # the currency key is arbitrary so if you want a new currency just add a new key
+      # the key must be formatted_like_this though, for rendering/saving purposes
+      currencies:
+        gold:
+          min: 10
+          max: 20
+      # pools is a list of either a `"itemEntityReference": dropChance` or a name of a loot pool entry
+      # defined in the loot-pools.yml. This lets you do things like having a 'global' loot pool that every
+      # npc in the area can drop
+      pools:
+        - "wehnimers-landing-catacombs:sliceofcheese": 25
+        - "wehnimers-landing-catacombs:giantratpelt": 25
+  description: >-
+    The giant rat has enormous black eyes. It's fur is a dark brown and it's teeth are sharp and yellow.

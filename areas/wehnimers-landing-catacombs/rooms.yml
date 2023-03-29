@@ -1,0 +1,219 @@
+---
+- id: beneath-well
+  title: Catacombs, Beneath the Well
+  description: "The columnar stone shaft of an old well punctures the vaulted ceiling above and extends about halfway to the ground.  Directly beneath is the glassy surface of a spring-fed lake of unsurpassed crystalline beauty.  Diffuse light refracts off the lake and casts multihued reflections on the walls, as though filtered through a thousand tiny prisms of Elven devising.  The scene is so enchanting, you almost forget the harsh, muffled sounds echoing down the well.  You also see a cave gnome, a tiny stream flowing southwards into a muddy chamber, a wide darkened crevice and a stout rope hanging down from the well, just within your reach."
+  exits:
+    - direction: rope
+      roomId: "wehnimers-landing-town:old-well"
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:muddy-bend"
+- id: muddy-bend
+  title: Catacombs, Muddy Bend
+  description: "Dirt and rock, held together by stout, ancient tree roots, are all that is left of the walls here. An old cave-in reduced the original tunnel to a mass of jumbled rubble beneath you. Mud and loose stones line the sides of the passage, and the earthen roof is just high enough for you to stand up. A thin trickle of glassy water flows eastward and down the rubble pile, from a large chamber just to the north."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:beneath-well"
+    - direction: rubble
+      roomId: "wehnimers-landing-catacombs:twisting-tunnels"
+- id: twisting-tunnels
+  title: Catacombs, Twisting Tunnels
+  description: "A cave-in some time in the distant past must have sealed off the western extension of the manmade tunnel here. Pristinely clear water cascades in waves over the heap of rubble left in the wake of the collapse, forming a limpid pool at its base. Overflow from the pool runs off eastward down the center of the floor along a time-worn channel."
+  npcs:
+  - id: "wehnimers-landing-catacombs:giantrat"
+    respawnChance: 50
+    maxLoad: 4
+  exits:
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:twisting-tunnels-2"
+    - direction: rubble
+      roomId: "wehnimers-landing-catacombs:muddy-bend"
+- id: twisting-tunnels-2
+  title: Catacombs, Twisting Tunnels
+  description: "You try and make sense out of the twisting and turning mess of tunnels here, but more openings only add 
+                to your dilemma. Gaps in the walls everywhere confound you, including one in the floor that serves to 
+                drain off some of the running water. Two of the largest tunnels branch off from the main passage at this 
+                juncture. One leads sharply upward and southwest."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:twisting-tunnels"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:twisting-tunnels-3"
+- id: twisting-tunnels-3
+  title: Catacombs, Twisting Tunnels
+  description: "This section of the tunnels is almost perfectly elliptical and leads generally in an east-west direction. It seems to have been formed by rapidly moving water eons ago, but now it is almost dry as time and use have forced the water table down deeper. A small trickle of clear water still travels along the center of the tunnel eastward."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:twisting-tunnels-2"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:underground-lake"
+- id: underground-lake
+  title: Catacombs, Underground Lake
+  description: "Fresh, clear water pours out of a smooth, elliptical passage to the west and gently cascades into a lake here. About the only sound you can hear is the soft chuckling of the water as it rolls through small stones that have been rounded with time. To the north and east, the shore of the lake becomes muddy and disappears into darkness."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:twisting-tunnels-3"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:underground-lake-2"
+- id: underground-lake-2
+  title: Catacombs, Underground Lake
+  description: "Ripples from a small underground lake gently lap at the black, muddy shore in this cavernous chamber. Occasionally, soft splashes and gurgles resound, seeming to originate to the northwest. The shore curves north and west from here, punctuated by tracks of humans and animals and by a slimy trail whose maker you would rather not come face to face with."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:underground-lake"
+    - direction: roots
+      roomId: "wehnimers-landing-catacombs:east-west-tunnel"
+- id: east-west-tunnel
+  title: Catacombs, East-West Tunnel
+  description: "This smallish, circular chamber seems to mark the beginning of a series of branching tunnels. To the east, a long passage recedes into the murk, while a narrower one leads southwest. Sepulchers line the walls, broken into at random intervals. A tangle of roots on the northwest side of the chamber conceals the source of a tiny streamlet. A channel in the floor of the tunnel cradles the trickling water."
+  exits:
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:east-west-tunnel-2"
+    - direction: roots
+      roomId: "wehnimers-landing-catacombs:underground-lake-2"
+- id: east-west-tunnel-2
+  title: Catacombs, East-West Tunnel
+  description: "The tunnel continues here with little noticeable change.  Streaks of yellow and orange deposits smear the walls in places where the aquiferous stone has been cut through.  Droplets from that stone layer trickle down the walls to join the small flow in the center of the room.  Most of the crypts in this section have been picked clean by grave robbers long ago.  You also see a plundered crypt."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:east-west-tunnel"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:east-west-tunnel-3"
+- id: east-west-tunnel-3
+  title: Catacombs, East-West Tunnel
+  description: "Dark openings in the walls remind you of your own fragile mortality as you try to peer inside them. Most are empty, but others contain old bones and tattered rags, evidence of plundering. A narrow ribbon of water flows gently eastward along the tunnel floor."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:east-west-tunnel-2"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:east-west-tunnel-4"
+
+- id: east-west-tunnel-4
+  title: Catacombs, East-West Tunnel
+  description: "A clammy chill descends upon your skin as you take a moment to survey the enveloping gloom.  A tunnel carved through glistening black rock stretches as far as the dim light allows you to see, to the east and west.  Hundreds of cramped, oblong tombs open out of the walls wherever space permits.  Most have remained sealed but others have collapsed or been pillaged over time.  A thin rivulet of water runs east down the center of the floor."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:east-west-tunnel-3"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:east-west-tunnel-5"
+- id: east-west-tunnel-5
+  title: Catacombs, East-West Tunnel
+  description: "A warm gust of air counteracts the dank chill of the tunnel as it blows in from an opening to the north, and through a side passage to the south.  Graves are excavated at close intervals into the walls along the east-west axis of the tunnel here.  Several small streams flow into this room to connect with a larger one running down the center of the floor."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:east-west-tunnel-4"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:collapsed-tunnel"
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:mossy-climb"
+- id: collapsed-tunnel
+  title: Catacombs, Collapsed Tunnel
+  description: "Most of the roof has collapsed here, totally blocking travel farther east. Water enters from the western tunnels and accumulates in a fairly deep, circular pool at the foot of the rubble. Besides the sound of the gurgling water, you hear a low rumble from beyond the obstructing debris."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:east-west-tunnel-5"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:collapsed-tunnel-2"
+- id: mossy-climb
+  title: Catacombs, Mossy Climb
+  description: "Thick moss covers every available surface here. Where you can see through the growth, you notice that the walls seem fairly recent and are made of red brick. Openings in the ceiling at seemingly random intervals provide some faint light and occasionally you hear footsteps and murmurings overhead. The tunnel continues on to the north, up along a high ledge. You also see an old rusty grate."
+  exits:
+    - direction: up
+      roomId: "wehnimers-landing-catacombs:ledge"
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:east-west-tunnel-5"
+    - direction: grate
+      roomId: "wehnimers-landing-catacombs:sewers-nexus"
+- id: ledge
+  title: Catacombs, High Ledge
+  description: "You are somewhat out of breath, and stand atop the ledge looking down. As you glance north, you are disappointed to discover that the recessed tunnel, which looked clear from below, has actually been blocked by a cave-in. You must halt your northern explorations here for now."
+  exits:
+    - direction: down
+      roomId: "wehnimers-landing-catacombs:mossy-climb"
+- id: sewers-nexus
+  title: Wehnimer's Sewer, Nexus
+  description: "Dim light filters down from the rusty grate imbedded in the ceiling. The walls are cracked and broken, while the floor is covered with a thin layer of mud, or worse. The air is damp and musty, while gently drifting in from the surrounding tunnels are some of the most appalling odors it has ever been your misfortune to experience. Tunnels slope slightly downward in all directions."
+  exits:
+    - direction: grate
+      roomId: "wehnimers-landing-catacombs:mossy-climb"
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-north-1"
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-south-1"
+- id: sewer-north-1
+  title: Abandoned Sewer
+  description: "This tunnel has obviously been neglected for a number of years.  The mortar is falling out from around many of the bricks, some of which are broken.  Much of the floor is covered with various mosses and slimes, puddles of stagnant water, and many kinds of disgusting creepy-crawlies."
+  exits:
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewers-nexus"
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-north-2"
+- id: sewer-north-2
+  title: Abandoned Sewer
+  description: "A faint light trickles in through the cracks in the ceiling, as the tunnel continues to drop.  In the distance, you can hear the faint scratching sounds of vermin being about their business."
+  exits:
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-north-1"
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-north-3"
+- id: sewer-north-3
+  title: Abandoned Sewer
+  description: "You carefully pick your way around the bits and pieces of debris.  Just thinking about the nature of this debris makes you a bit nauseous.  The smell of the place is revolting, making matters even worse."
+  exits:
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-north-2"
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-north-4"
+- id: sewer-north-4
+  title: Abandoned Sewer
+  description: "The tunnel slopes gently downward, and much of the floor is shattered and broken.  You could easily do without the slight movement of the air, as it only brings ever more appalling scents to your attention."
+  exits:
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-north-3"
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-north-5"
+- id: sewer-north-5
+  title: Abandoned Sewer
+  description: "A faint light trickles in through the cracks in the ceiling, as the tunnel continues to drop.  In the distance, you can hear the faint scratching sounds of vermin being about their business."
+  exits:
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-north-4"
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-north-6"
+- id: sewer-north-6
+  title: Abandoned Sewer
+  description: "The openings of small pipes are visible through the muck on the walls.  To judge from the smell, they used to deliver raw sewage into this main tunnel.  The tunnel continues to descend, as the darkness and humidity seem to close in around you."
+  exits:
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-north-5"
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-north-7"
+- id: sewer-north-7
+  title: Abandoned Sewer
+  description: "There is a small bit of sludgy water pouring out of one of the many small pipes.  It has collected into a dark slimy looking pool here, with a small trickle of filth oozing on down the tunnel.  There is just enough room to pick your way around it as you continue on deeper into the earth."
+  exits:
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-north-6"
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-north-8"
+- id: sewer-north-8
+  title: Abandoned Sewer
+  description: "It appears that some of the ceiling has fallen, partially damming up the noxious liquid that could only be called water by a distant stretch of the imagination.  You shudder, as you realize that in order to pass, you are going to have to wade, for at least a few feet."
+  exits:
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-north-7"
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-north-9"
+- id: sewer-north-9
+  title: Abandoned Sewer
+  description: "The trickle of sludge begins to move a bit faster, as the slope steepens.  The small pipes in the walls grow fewer, but no less filthy.  You can feel a touch of moving air, perhaps a bit fresher than that which you've grown used to breathing."
+  exits:
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-north-8"
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-north-10"
+- id: sewer-north-10
+  title: Abandoned Sewer
+  description: "The air smells unbelievably fresh, and you inhale great gasping breaths, having nearly forgotten what fresh air smells like.  You seem to have reached the end of the tunnel, as it empties out into a large underground river.  The slope is quite steep, and the small stream of sludge would be racing along, if it was any less thick."
+  exits:
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-north-9"

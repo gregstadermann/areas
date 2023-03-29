@@ -1,0 +1,20 @@
+- id: "sliceofcheese"
+  name: "slice of cheese"
+  roomDesc: "a moldy slice of cheese"
+  keywords: [ "slice", "cheese", "moldy" ]
+  description: "A yellow, slightly moldy slice of cheese. Only a rat could find this appetizing."
+  behaviors:
+    decay:
+      duration: 240
+- id: "giantratpelt"
+  name: "giant rat pelt"
+  roomDesc: "a giant rat pelt"
+  keywords: [ "pelt" ]
+  description: "A giant rat pelt. It's fur is a dark brown."
+  behaviors:
+      decay:
+        duration: 240
+  metadata:
+    sellable:
+      value: 10
+      currency: gold
