@@ -182,8 +182,8 @@
     noPickup: true
 - id: "starcloak"
   type: CONTAINER
-  name: "a mysterious star-covered cloak"
-  roomDesc: "a mysterious star-covered cloak"
+  name: "a star-covered cloak"
+  roomDesc: "a star-covered cloak"
   keywords: [ "start", "cloak" ]
   description: "Time has worn this cloak of stars"
   items: [ ]

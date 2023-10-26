@@ -53,7 +53,23 @@
   title: Wehnimer's, Land's End Rd.
   coordinates: [0, 4, 0]
   description: "Vigilant guardsmen scrutinize the citizens and travelers arriving and departing through the wide gates spanning the land route into Wehnimer's Landing.  The frenetic pace of the city to the south is a far cry from the deceptive calm of the wilds of Elanith outside.  Two daunting towers survey the countryside and protect the town, flanking the road to the east and west."
-
+  exits:
+    - direction: east tower
+      roomId: "wehnimers-landing-town:east-tower"
+    - direction: west tower
+      roomId: "wehnimers-landing-town:west-tower"
+- id: east-tower
+  title: East Tower
+  description: "The tower is a massive structure of stone and wood, rising high above the palisade.  A large wooden door is set into the wall, and a small window is set high above it.  A wooden staircase leads up to the door.  You also see a large wooden door."
+  exits:
+    - direction: out
+      roomId: "wehnimers-landing-town:lands-end-road"
+- id: west-tower
+  title: West Tower
+  description: "The tower is a massive structure of stone and wood, rising high above the palisade.  A large wooden door is set into the wall, and a small window is set high above it.  A wooden staircase leads up to the door.  You also see a large wooden door."
+  exits:
+    - direction: out
+      roomId: "wehnimers-landing-town:lands-end-road"
 - id: raging-thrak-inn-barroom
   title: Raging Thrak Inn, Barroom
   exits:
