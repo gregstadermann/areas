@@ -35,6 +35,7 @@
   attributes:
     health: 100
     strength: 10
+    constitution: 5
     AS: 30
     DS: 0
   behaviors:
@@ -68,6 +69,7 @@
   attributes:
     health: 200
     strength: 15
+    constitution: 5
     AS: 60
     DS: 25
   behaviors:
@@ -121,6 +123,7 @@
     DS: 0
     health: 120
     strength: 12
+    constitution: 5
   behaviors:
     combat: true
     ranvier-aggro:
@@ -136,6 +139,7 @@
     DS: 0
     health: 100
     strength: 15
+    constitution: 5
   behaviors:
     combat: true
     ranvier-aggro:

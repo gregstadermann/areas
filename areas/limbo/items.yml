@@ -1,5 +1,5 @@
 - id: "rustysword"
-  name: "rusty sword"
+  name: "a rusty sword"
   type: WEAPON
   roomDesc: "a rusty sword"
   keywords: [ "sword", "rusty", "metal", "rusted" ]
@@ -16,7 +16,7 @@
     stats:
       critical: 1
 - id: "sliceofcheese"
-  name: "slice of cheese"
+  name: "a slice of cheese"
   roomDesc: "a moldy slice of cheese"
   keywords: [ "slice", "cheese", "moldy" ]
   description: "A yellow, slightly moldy slice of cheese. Only a rat could find this appetizing."
@@ -25,7 +25,7 @@
       duration: 240
 - id: "woodenchest"
   type: CONTAINER
-  name: "wooden chest"
+  name: "a wooden chest"
   roomDesc: "a wooden chest"
   keywords: [ "wooden", "chest" ]
   description: "Time has not been kind to this chest. It seems to be held together solely by the dirt and rust."
@@ -35,7 +35,7 @@
   metadata:
     noPickup: true
 - id: "scraps"
-  name: "scraps"
+  name: "some scraps"
   quality: poor
   roomDesc: "some scraps"
   keywords: [ "dummy", "scraps" ]
@@ -45,7 +45,7 @@
       value: 5
       currency: gold
 - id: trainingsword
-  name: "training sword"
+  name: "a training sword"
   type: WEAPON
   roomDesc: "a training sword"
   keywords: ["sword", "training", "iron"]
@@ -104,7 +104,7 @@
         restores: 30
         stat: "health"
 - id: potionstrength1
-  name: "hazy orange potion"
+  name: "a hazy orange potion"
   roomDesc: "a hazy orange potion"
   keywords: [ "potion", "strength" ]
   type: POTION
@@ -124,10 +124,10 @@
         magnitude: 10
         stat: "strength"
 - id: bladeofranvier
-  name: "Blade of Ranvier"
+  name: "a massive blade"
   type: WEAPON
   roomDesc: "a massive blade"
-  keywords: ["sword", "blade", "ranvier"]
+  keywords: ["sword", "blade", "massive", "ranvier"]
   description: "The blade shines a brilliant silver. Holding it you feel as if you could take on the world."
   script: "ranvier-blade"
   metadata:
@@ -146,7 +146,7 @@
       stamina: 2
       critical: 3
 - id: woodenshield
-  name: "wooden shield"
+  name: "a wooden shield"
   type: ARMOR
   roomDesc: "a wooden shield"
   keywords: ["shield", "wooden"]
@@ -170,7 +170,7 @@
     quality: common
 - id: locked_chest
   type: CONTAINER
-  name: "locked wooden chest"
+  name: "a locked wooden chest"
   roomDesc: "a wooden chest"
   keywords: [ "locked", "wooden", "chest" ]
   items: [ "limbo:rustysword" ]
@@ -215,7 +215,7 @@
     quality: epic
     minDamage: 1
     maxDamage: 100
-    speed: 3.0
+    speed: 10
     stats:
       critical: 20
 - id: "broadsword"
@@ -236,7 +236,7 @@
     stats:
       critical: 1
 - id: zoso_key
-  name: "weird key"
+  name: "a weird key"
   keywords: ["key", "weird" ]
   roomDesc: "a weird looking key"
   description: "Zoso's Tower is enscribed upon the key"
