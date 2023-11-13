@@ -24,6 +24,7 @@
   exits:
     - direction: inn
       roomId: "wehnimers-landing-town:raging-thrak-inn-barroom"
+      hidden: true
 - id: tsne
   title: Town Square, Northeast
   coordinates: [1, 1, 0]
