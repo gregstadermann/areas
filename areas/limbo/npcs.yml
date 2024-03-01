@@ -14,6 +14,8 @@
   attributes:
     health: 100
     energy: 100
+    quickness: 0
+    constitution: 0
     AS: 34
     DS: 0
 - id: wiseoldman
@@ -36,10 +38,13 @@
     health: 100
     strength: 10
     constitution: 5
+    quickness: 0
     AS: 30
     DS: 0
   behaviors:
     combat: true
+    ranvier-aggro:
+      delay: 5
     lootable:
       # currencies is a list of currencies this npc can possibly drop and the amount range
       # the currency key is arbitrary so if you want a new currency just add a new key
@@ -70,6 +75,7 @@
     health: 200
     strength: 15
     constitution: 5
+    quickness: 0
     AS: 60
     DS: 25
   behaviors:
@@ -124,6 +130,7 @@
     health: 120
     strength: 12
     constitution: 5
+    quickness: 0
   behaviors:
     combat: true
     ranvier-aggro:
@@ -140,6 +147,7 @@
     health: 100
     strength: 15
     constitution: 5
+    quickness: 0
   behaviors:
     combat: true
     ranvier-aggro:

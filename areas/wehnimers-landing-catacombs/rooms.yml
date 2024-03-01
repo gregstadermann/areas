@@ -10,6 +10,10 @@
 - id: muddy-bend
   title: Catacombs, Muddy Bend
   description: "Dirt and rock, held together by stout, ancient tree roots, are all that is left of the walls here. An old cave-in reduced the original tunnel to a mass of jumbled rubble beneath you. Mud and loose stones line the sides of the passage, and the earthen roof is just high enough for you to stand up. A thin trickle of glassy water flows eastward and down the rubble pile, from a large chamber just to the north."
+  npcs:
+    - id: "wehnimers-landing-catacombs:giantrat"
+      respawnChance: 50
+      maxLoad: 5
   exits:
     - direction: north
       roomId: "wehnimers-landing-catacombs:beneath-well"
@@ -21,7 +25,7 @@
   npcs:
   - id: "wehnimers-landing-catacombs:giantrat"
     respawnChance: 50
-    maxLoad: 4
+    maxLoad: 5
   exits:
     - direction: east
       roomId: "wehnimers-landing-catacombs:twisting-tunnels-2"
@@ -57,6 +61,10 @@
 - id: underground-lake-2
   title: Catacombs, Underground Lake
   description: "Ripples from a small underground lake gently lap at the black, muddy shore in this cavernous chamber. Occasionally, soft splashes and gurgles resound, seeming to originate to the northwest. The shore curves north and west from here, punctuated by tracks of humans and animals and by a slimy trail whose maker you would rather not come face to face with."
+  npcs:
+    - id: "wehnimers-landing-catacombs:giantrat"
+      respawnChance: 75
+      maxLoad: 5
   exits:
     - direction: west
       roomId: "wehnimers-landing-catacombs:underground-lake"
@@ -65,6 +73,10 @@
 - id: east-west-tunnel
   title: Catacombs, East-West Tunnel
   description: "This smallish, circular chamber seems to mark the beginning of a series of branching tunnels. To the east, a long passage recedes into the murk, while a narrower one leads southwest. Sepulchers line the walls, broken into at random intervals. A tangle of roots on the northwest side of the chamber conceals the source of a tiny streamlet. A channel in the floor of the tunnel cradles the trickling water."
+  npcs:
+    - id: "wehnimers-landing-catacombs:giantrat"
+      respawnChance: 50
+      maxLoad: 5
   exits:
     - direction: east
       roomId: "wehnimers-landing-catacombs:east-west-tunnel-2"
@@ -112,7 +124,7 @@
     - direction: west
       roomId: "wehnimers-landing-catacombs:east-west-tunnel-5"
     - direction: east
-      roomId: "wehnimers-landing-catacombs:collapsed-tunnel-2"
+      roomId: "wehnimers-landing-catacombs:mossy-climb"
 - id: mossy-climb
   title: Catacombs, Mossy Climb
   description: "Thick moss covers every available surface here. Where you can see through the growth, you notice that the walls seem fairly recent and are made of red brick. Openings in the ceiling at seemingly random intervals provide some faint light and occasionally you hear footsteps and murmurings overhead. The tunnel continues on to the north, up along a high ledge. You also see an old rusty grate."
@@ -198,6 +210,10 @@
 - id: sewer-north-8
   title: Abandoned Sewer
   description: "It appears that some of the ceiling has fallen, partially damming up the noxious liquid that could only be called water by a distant stretch of the imagination.  You shudder, as you realize that in order to pass, you are going to have to wade, for at least a few feet."
+  npcs:
+    - id: "wehnimers-landing-catacombs:giantrat"
+      respawnChance: 50
+      maxLoad: 5
   exits:
     - direction: south
       roomId: "wehnimers-landing-catacombs:sewer-north-7"

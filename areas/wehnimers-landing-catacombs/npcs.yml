@@ -3,12 +3,16 @@
   level: 2
   name: "a giant rat"
   attributes:
-    health: 100
-    strength: 10
-    AS: 30
+    health: 20
+    strength: 2
+    AS: 5
     DS: 0
+    constitution: 1
   behaviors:
     combat: true
+    ranvier-wander:
+      interval: 20
+      areaRestricted: true
     lootable:
       # pools is a list of either a `"itemEntityReference": dropChance` or a name of a loot pool entry
       # defined in the loot-pools.yml. This lets you do things like having a 'global' loot pool that every

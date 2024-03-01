@@ -1,11 +1,95 @@
+- id: "carved_walking_staff"
+  name: "a walking staff carved end-to-end with vines and flowers"
+  type: WEAPON
+  roomDesc: "a walking staff carved end-to-end with vines and flowers"
+  keywords: ["staff", "carved", "walking"]
+  description: "A walking staff carved end-to-end with vines and flowers"
+  metadata:
+    weapon_type: 'two_handed'
+    baseWeapon: 'weapon_quarterstaff'
+    level: 1
+    slot: 'wield'
+    itemLevel: 1
+    quality: epic
+    minDamage: 1
+    maxDamage: 50
+    speed: 3
+    stats:
+      critical: 60
+      quality: common
+      level: 1
+      itemLevel: 1
+
+- id: "gleeman_cloak"
+  name: "a cloak that seems to be made from a mass of patches in odd shapes and sizes"
+  type: CONTAINER
+  roomDesc: "a cloak that seems to be made from a mass of patches in odd shapes and sizes"
+  keywords: ["cloak", "patched"]
+  description: "a cloak that seems to be made from a mass of patches in odd shapes and sizes"
+  maxItems: 1000
+  metadata:
+    quality: common
+    slot: "back"
+    level: 1
+    itemLevel: 100
+
+- id: "anonymous_grey_cloak"
+  name: "an anonymous grey cloak"
+  type: CONTAINER
+  roomDesc: "an anonymous grey cloak"
+  keywords: ["cloak", "grey"]
+  description: "an anonymous grey cloak"
+  maxItems: 44
+  metadata:
+      quality: common
+      slot: "cloak"
+      level: 1
+      itemLevel: 1
+      stats:
+      armor: 100
+      sellable:
+      value: 30
+      currency: gold
+
+- id: "plain_silver_pin"
+  name: "a plain silver pin"
+  roomDesc: "a plain silver pin"
+  keywords: ["pin", "silver"]
+  description: "A plain silver pin"
+  metadata:
+    slot: "pin"
+    quality: common
+    level: 1
+    itemLevel: 1
+    sellable:
+    value: 10
+    currency: gold
+
+- id: "floor_dragging_robe"
+  name: "a floor-dragging black robe"
+  type: ARMOR
+  roomDesc: "a floor-dragging black robe"
+  keywords: ["robes", "floor-dragging"]
+  description: "a floor-dragging black robe"
+  metadata:
+    quality: common
+    slot: "chest"
+    level: 1
+    itemLevel: 1
+    armor_type: 1,
+    stats:
+      armor: 500
+
 - id: "rustysword"
   name: "a rusty sword"
   type: WEAPON
+  weaponType: ONE_HANDED_EDGED
   roomDesc: "a rusty sword"
   keywords: [ "sword", "rusty", "metal", "rusted" ]
   description: "An arm's-length, jagged metal sword discolored with red corrosion. The worn leather grip barely held on by fraying thread."
   metadata:
-    type: 'edged'
+    weapon_type: 'one_handed_edged'
+    baseWeapon: 'weapon_broadsword'
     level: 1
     slot: 'wield'
     itemLevel: 1
@@ -15,6 +99,7 @@
     speed: 2.8
     stats:
       critical: 1
+
 - id: "sliceofcheese"
   name: "a slice of cheese"
   roomDesc: "a moldy slice of cheese"
@@ -23,6 +108,7 @@
   behaviors:
     decay:
       duration: 240
+
 - id: "woodenchest"
   type: CONTAINER
   name: "a wooden chest"
@@ -31,9 +117,10 @@
   description: "Time has not been kind to this chest. It seems to be held together solely by the dirt and rust."
   items: [ "limbo:rustysword", "limbo:leathervest", "limbo:potionhealth1", "limbo:potionstrength1" ]
   closed: true
-  maxItems: 5
+  maxItems: 55
   metadata:
     noPickup: true
+
 - id: "scraps"
   name: "some scraps"
   quality: poor
@@ -44,6 +131,7 @@
     sellable:
       value: 5
       currency: gold
+
 - id: trainingsword
   name: "a training sword"
   type: WEAPON
@@ -51,7 +139,8 @@
   keywords: ["sword", "training", "iron"]
   description: "A hefty iron blade. Not the sharpest sword in the world but it will get the job done."
   metadata:
-    type: 'edged'
+    baseWeapon: 'weapon_broadsword'
+    weapon_type: 'one_handed_edged'
     quality: rare
     slot: "wield"
     itemLevel: 10
@@ -66,6 +155,7 @@
     sellable:
       value: 30
       currency: gold
+
 - id: leathervest
   name: "leather vest"
   type: ARMOR
@@ -73,6 +163,7 @@
   keywords: ["leather", "vest"]
   description: "A plain leather vest. Better than nothing."
   metadata:
+    armor_type: 5
     quality: common
     slot: "chest"
     level: 1
@@ -82,6 +173,7 @@
     sellable:
       value: 30
       currency: gold
+
 - id: potionhealth1
   name: "a pink colored potion"
   roomDesc: "a green-colored potion"
@@ -103,6 +195,7 @@
       options:
         restores: 30
         stat: "health"
+
 - id: potionstrength1
   name: "a hazy orange potion"
   roomDesc: "a hazy orange potion"
@@ -123,6 +216,7 @@
       state:
         magnitude: 10
         stat: "strength"
+
 - id: bladeofranvier
   name: "a massive blade"
   type: WEAPON
@@ -131,7 +225,8 @@
   description: "The blade shines a brilliant silver. Holding it you feel as if you could take on the world."
   script: "ranvier-blade"
   metadata:
-    type: 'edged'
+    baseWeapon: 'weapon_broadsword'
+    weapon_type: 'one_handed_edged'
     quality: epic
     slot: "wield"
     itemLevel: 15
@@ -145,9 +240,10 @@
       strength: 2
       stamina: 2
       critical: 3
+
 - id: woodenshield
   name: "a wooden shield"
-  type: ARMOR
+  type: SHIELD
   roomDesc: "a wooden shield"
   keywords: ["shield", "wooden"]
   description: "A rather uninteresting looking wooden shield. A rusted metal band barely hold its together and the leather arm band is nearly torn."
@@ -161,6 +257,7 @@
     sellable:
       value: 30
       currency: gold
+
 - id: test_key
   name: "oddly shaped key"
   keywords: ["key", "odd", "oddly", "shaped"]
@@ -168,6 +265,7 @@
   description: "This key seems overly complex with numerous grooves."
   metadata:
     quality: common
+
 - id: locked_chest
   type: CONTAINER
   name: "a locked wooden chest"
@@ -180,15 +278,16 @@
   maxItems: 5
   metadata:
     noPickup: true
-- id: "starcloak"
+
+- id: "zoso_cloak"
   type: CONTAINER
   name: "a star-covered cloak"
   roomDesc: "a star-covered cloak"
-  keywords: [ "start", "cloak" ]
+  keywords: [ "star", "cloak" ]
   description: "Time has worn this cloak of stars"
   items: [ ]
   closed: true
-  maxItems: 10
+  maxItems: 100
   metadata:
     quality: epic
     slot: "back"
@@ -200,7 +299,8 @@
       value: 3000000000
       currency: gold
     noPickup: false
-- id: "zosostaff"
+
+- id: "zoso_staff"
   name: "an ancient gnarled staff"
   type: WEAPON
   roomDesc: "an ancient gnarled staff"
@@ -208,7 +308,8 @@
   description: "an ancient gnarled staff"
   script: "zoso-staff"
   metadata:
-    type: 'blunt'
+    baseWeapon: 'weapon_quarterstaff'
+    weapon_type: 'two_handed'
     level: 1
     slot: 'wield'
     itemLevel: 20
@@ -225,30 +326,61 @@
   keywords: [ "broadsword"]
   description: "A broadsword"
   metadata:
-    type: 'edged'
     level: 1
+    baseWeapon: 'weapon_broadsword'
     slot: 'hands'
     itemLevel: 1
     quality: common
+    weapon_type: 'ONE_HANDED_EDGED'
     minDamage: 4
     maxDamage: 20
     speed: 8.00
     stats:
       critical: 1
-- id: zoso_key
+- id: "zoso_key"
   name: "a weird key"
   keywords: ["key", "weird" ]
   roomDesc: "a weird looking key"
   description: "Zoso's Tower is enscribed upon the key"
   metadata:
     quality: epic
-- id: zoso_robes
+- id: "zoso_boots"
+  name: "some black leather boots"
+  type: ARMOR
+  roomDesc: "some black leather boots"
+  keywords: ["boots"]
+  description: "some black leather boots"
+  metadata:
+    armor_type: 3
+    quality: epic
+    slot: "feet"
+    level: 1
+    itemLevel: 1
+    stats:
+      armor: 500
+    sellable:
+      value: 1
+      currency: gold
+- id: "zoso_pipe"
+  name: "a long-stemmed pipe"
+  roomDesc: "a long-stemmed pipe"
+  keywords: ["pipe"]
+  description: "an elaborate long-stemmed pipe with a carved wooden bowl"
+  metadata:
+    quality: epic
+    level: 1
+    itemLevel: 1
+    sellable:
+      value: 1
+      currency: gold
+- id: "zoso_robes"
   name: "a set of flowing dark blue robes"
   type: ARMOR
   roomDesc: "a set of flowing dark blue robes"
   keywords: ["robe", "robes"]
   description: "A set of flowing dark blue robes"
   metadata:
+    armor_type: 2
     quality: epic
     slot: "chest"
     level: 1
@@ -258,3 +390,34 @@
     sellable:
       value: 300000000
       currency: gold
+- id: "zoso_chest"
+  type: CONTAINER
+  name: "a sturdy chest"
+  roomDesc: "a sturdy chest"
+  keywords: [ "sturdy", "chest" ]
+  description: "The old chest is well made and sturdy"
+  items: [ "limbo:zoso_robes", "limbo:zoso_boots", "limbo:zoso_key", "limbo:zoso_staff", "limbo:zoso_cloak", "limbo:broadsword", "limbo:bladeofranvier" ]
+  closed: true
+  maxItems: 50
+  maxSize: 50
+  metadata:
+    noPickup: true
+    quality: epic
+- id: "heavy_backpack"
+  type: CONTAINER
+  name: "a heavy backpack"
+  roomDesc: "a heavy backpack"
+  keywords: [ "backpack" ]
+  description: "This is an old, heavy backpack. It looks like it could hold a lot of items."
+  items: [ ]
+  closed: true
+  maxItems: 99
+  metadata:
+    quality: common
+    slot: "back"
+    level: 1
+    itemLevel: 1
+    sellable:
+      value: 30
+      currency: gold
+    noPickup: false

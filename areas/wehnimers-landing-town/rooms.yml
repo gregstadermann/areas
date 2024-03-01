@@ -6,9 +6,8 @@
   npcs: [mapped:squirrel]
   exits:
     - direction: well
+      hidden: true
       roomId: "wehnimers-landing-town:old-well"
-    - direction: down
-      roomId: "limbo:zosotower"
 - id: tsw
   title: Town Square, West
   coordinates: [-1, 0, 0]
@@ -20,10 +19,17 @@
 - id: tsnw
   title: Town Square, Northwest
   coordinates: [-1, 1, 0]
-  description: "This corner of the square is lively and hectic.  A number of representatives of the Landing's population, including several elven loggers and a party of rough-looking dwarves, loiter around the door of the Raging Thrak Inn, where the rowdy cheers of patrons and voices raised in songs of many sorts, from snatches of heroic ballads to blushingly bawdy tunes, beckon you to enter.  You also see an ivy-covered white monir tower, a polished granite statue and the Raging Thrak Inn."
+  description: "This corner of the square is lively and hectic.  A number of representatives of the Landing's population, including several elven loggers and a party of rough-looking dwarves, loiter around the door of the Raging Thrak Inn, where the rowdy cheers of patrons and voices raised in songs of many sorts, from snatches of heroic ballads to blushingly bawdy tunes, beckon you to enter."
+  items:
+    - id: "wehnimers-landing-town:raging-thrak-inn"
+    - id: "wehnimers-landing-town:ivy-tower"
+    - id: "wehnimers-landing-town:granite-statue"
   exits:
     - direction: inn
       roomId: "wehnimers-landing-town:raging-thrak-inn-barroom"
+      hidden: true
+    - direction: tower
+      roomId: "wehnimers-landing-town:zoso-tower"
       hidden: true
 - id: tsne
   title: Town Square, Northeast
@@ -62,6 +68,9 @@
 - id: east-tower
   title: East Tower
   description: "The tower is a massive structure of stone and wood, rising high above the palisade.  A large wooden door is set into the wall, and a small window is set high above it.  A wooden staircase leads up to the door.  You also see a large wooden door."
+  items:
+   - id: "wehnimers-landing-town:black_weapon_sling"
+     respawnChance: 50
   exits:
     - direction: out
       roomId: "wehnimers-landing-town:lands-end-road"
@@ -91,6 +100,9 @@
 - id: raging-thrak-inn-trophy-room
   title: Raging Thrak Inn, Trophy Room
   description: "Tiny smudges of soot mar the fieldstones used to create the grand fireplace in this cozy room.  A collection of plaques hangs above an immense grey marble mantel cluttered with trophy cups and bowls.  Fashioned from a single stone slab, the hearth extends to an impressive black bear rug with its maw frozen in a silent roar.  Several overstuffed wingback chairs, each covered in deep jewel-tone chintz, are scattered about the room.  Against the back wall, a tall glass-front curio houses several ancient mementos and a thrak hide curtain hangs nearby."
+  items:
+    - id: "limbo:heavy_backpack"
+      respawnChance: 50
   exits:
     - roomId: "wehnimers-landing-town:raging-thrak-inn-barroom"
       direction: east
@@ -101,4 +113,38 @@
     - direction: out
       roomId: "wehnimers-landing-town:tsc"
     - direction: rope
+      hidden: true
       roomId: "wehnimers-landing-catacombs:beneath-well"
+- id: "zoso-tower"
+  title: "Zoso's Tower"
+  description: >-
+    You are in a large room with a high ceiling. The walls are lined with bookshelves filled with tomes and scrolls. A large desk sits in the center of the room, covered in papers and books. A large window looks out over the town square. A large chest sits in the corner of the room.
+  items:
+    - id: "limbo:zoso_chest"
+    - id: "wehnimers-landing-town:twisted-doorframe"
+  script: 'zosotower'
+  exits:
+    - roomId: "limbo:training1"
+      direction: doorframe
+      hidden: true
+    - roomId: "wehnimers-landing-town:tsnw"
+      direction: out
+    - roomId: "wehnimers-landing-town:zoso-tower-basement"
+      direction: down
+  doors:
+    "limbo:training1":
+      lockedBy: "limbo:zoso_key"
+      locked: true
+      closed: true
+- id: "zoso-tower-basement"
+  title: "Zoso's Tower Basement"
+  description: >-
+    You are in a storage room.  The walls are lined with various items and boxes.
+  exits:
+    - roomId: "wehnimers-landing-town:zoso-tower"
+      direction: up
+  items:
+    - id: "limbo:plain_silver_pin"
+    - id: "limbo:floor_dragging_robe"
+    - id: "limbo:carved_walking_staff"
+    - id: "limbo:anonymous_grey_cloak"

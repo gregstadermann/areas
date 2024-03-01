@@ -168,26 +168,3 @@
       lockedBy: "limbo:test_key"
       locked: true
       closed: true
-- id: zosotower
-  title: "Zoso's Tower, Magical Workshop"
-  description: >
-    A rune-enscribed black obelisk towers in the center of this clearing, surrounded by a faerie ring. The runes pulse and glow with
-    a soft blue light. The grass immediately around the obelisk is immaculate, in stark contrast to the dying former meadow
-    that makes up the clearing.
-  items:
-    - id: "limbo:starcloak"
-    - id: "limbo:zosostaff"
-    - id: "limbo:zoso_key"
-    - id: "limbo:zoso_robes"
-    - id: "limbo:broadsword"
-  script: 'zosotower'
-  exits:
-    - roomId: "limbo:training1"
-      direction: down
-    - roomId: "wehnimers-landing-town:tsc"
-      direction: up
-  doors:
-    "wehnimers-landing-town:tsc":
-      lockedBy: "limbo:zoso_key"
-      locked: true
-      closed: true
