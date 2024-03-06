@@ -51,6 +51,20 @@
       value: 30
       currency: gold
 
+- id: "acrobat_bracelet"
+  name: "a circle of carved age-dark ivory"
+  roomDesc: "a circle of carved aged-dark ivory"
+  keywords: ["circle", "age-dark", "ivory", "bracelet"]
+  description: "At first glance it appears to be an acrobat bending backward to grip his ankles.  ONly a closer look would show that his wrists an ankles were bound together."
+  metadata:
+    slot: "pin"
+    quality: common
+    level: 1
+    itemLevel: 1
+    sellable:
+    value: 1000
+    currency: gold
+
 - id: "plain_silver_pin"
   name: "a plain silver pin"
   roomDesc: "a plain silver pin"

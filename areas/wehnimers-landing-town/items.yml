@@ -110,3 +110,18 @@
   description: "An oddly twisted redstone doorframe."
   metadata:
     noPickup: true
+
+- id: "eonake-sledgehammer"
+  name: "an inlaid white eonake sledgehammer"
+  type: WEAPON
+  roomDesc: "an inlaid white eonake sledgehammer"
+  keywords: ["sledgehammer", "eonake", "inlaid", "white"]
+  description: "Wrought from eonake as white as sunlight shining off a fresh snowfall, the head of the maul is massive and ornate, bearing mithril-gilded bas-reliefs on either side.  One relief features a stylized fist wreathed in blue flames, and the other a pale golden key.   A massive haft holds the hammer's head aloft, carved of silvery illthorn and inlaid with mother-of-pearl bands that lend resplendent color to the silvery wood beneath.    A tiny golden eyelid, which is open, is inlaid into the weapon, while a faint blue flicker dances around it."
+  metadata:
+    baseWeapon: 'maul'
+    weapon_type: 'two_handed'
+    quality: epic
+    slot: "wield"
+    minDamage: 20
+    maxDamage: 40
+    speed: 5.0
