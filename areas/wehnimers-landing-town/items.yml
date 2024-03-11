@@ -1,9 +1,9 @@
 - id: "black_weapon_sling"
   type: CONTAINER
-  name: "a black leather weapon sling"
-  roomDesc: "a black leather weapon sling"
-  keywords: [ "sling", "weapon", "black"]
-  description: "A black leather weapon sling with a small pouch for holding ammunition."
+  name: "a black leather weapons sling"
+  roomDesc: "a black leather weapons sling"
+  keywords: [ "sling", "weapons", "black"]
+  description: "A black leather weapons sling with a small pouch for holding ammunition."
   maxItems: 1
   metadata:
     quality: common
@@ -116,7 +116,7 @@
   type: WEAPON
   roomDesc: "an inlaid white eonake sledgehammer"
   keywords: ["sledgehammer", "eonake", "inlaid", "white"]
-  description: "Wrought from eonake as white as sunlight shining off a fresh snowfall, the head of the maul is massive and ornate, bearing mithril-gilded bas-reliefs on either side.  One relief features a stylized fist wreathed in blue flames, and the other a pale golden key.   A massive haft holds the hammer's head aloft, carved of silvery illthorn and inlaid with mother-of-pearl bands that lend resplendent color to the silvery wood beneath.    A tiny golden eyelid, which is open, is inlaid into the weapon, while a faint blue flicker dances around it."
+  description: "Wrought from eonake as white as sunlight shining off a fresh snowfall, the head of the maul is massive and ornate, bearing mithril-gilded bas-reliefs on either side.  One relief features a stylized fist wreathed in blue flames, and the other a pale golden key.   A massive haft holds the hammer's head aloft, carved of silvery illthorn and inlaid with mother-of-pearl bands that lend resplendent color to the silvery wood beneath.    A tiny golden eyelid, which is open, is inlaid into the weapons, while a faint blue flicker dances around it."
   metadata:
     baseWeapon: 'maul'
     weapon_type: 'two_handed'

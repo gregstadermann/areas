@@ -122,7 +122,6 @@
   items:
     - id: "limbo:zoso_chest"
     - id: "wehnimers-landing-town:twisted-doorframe"
-  script: 'zosotower'
   exits:
     - roomId: "limbo:training1"
       direction: doorframe

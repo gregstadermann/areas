@@ -5,7 +5,7 @@ const { Random } = require('rando-js');
 const { Broadcast, Heal } = require('ranvier');
 
 /**
- * Example weapon hit script
+ * Example weapons hit script
  */
 module.exports = {
   listeners: {
@@ -14,9 +14,9 @@ module.exports = {
         return;
       }
 
-      // Have to be careful in weapon scripts. If you have a weapon script that causes damage and
+      // Have to be careful in weapons scripts. If you have a weapons script that causes damage and
       // it listens for the 'hit' event you will have to check to make sure that `damage.source
-      // !== this` otherwise you could create an infinite loop the weapon's own damage triggering
+      // !== this` otherwise you could create an infinite loop the weapons's own damage triggering
       // its script
 
       if (Random.probability(50)) {
