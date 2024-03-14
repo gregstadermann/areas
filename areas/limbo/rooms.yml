@@ -17,6 +17,9 @@
       direction: west
     - roomId: "mapped:start"
       direction: north
+    - roomId: "wehnimers-landing-catacombs:sewers-nexus"
+      direction: up
+
 - id: black
   title: "Black Room"
   description: >-

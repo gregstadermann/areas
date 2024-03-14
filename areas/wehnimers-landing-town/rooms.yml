@@ -108,7 +108,7 @@
       direction: east
 - id: old-well
   title: Town Well
-  description: "iThe old well is made of flat stones built up around a circular opening. A slate roof overhangs the opening, keeping the drinking water clear and refreshing. Several skin water buckets, with long ropes attached, are scattered on the hard-packed earth surrounding the well. "
+  description: "The old well is made of flat stones built up around a circular opening. A slate roof overhangs the opening, keeping the drinking water clear and refreshing. Several skin water buckets, with long ropes attached, are scattered on the hard-packed earth surrounding the well. "
   exits:
     - direction: out
       roomId: "wehnimers-landing-town:tsc"
