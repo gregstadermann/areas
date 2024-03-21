@@ -23,9 +23,9 @@
   title: Catacombs, Twisting Tunnels
   description: "A cave-in some time in the distant past must have sealed off the western extension of the manmade tunnel here. Pristinely clear water cascades in waves over the heap of rubble left in the wake of the collapse, forming a limpid pool at its base. Overflow from the pool runs off eastward down the center of the floor along a time-worn channel."
   npcs:
-  - id: "wehnimers-landing-catacombs:giantrat"
-    respawnChance: 50
-    maxLoad: 5
+    - id: "wehnimers-landing-catacombs:giantrat"
+      respawnChance: 50
+      maxLoad: 5
   exits:
     - direction: east
       roomId: "wehnimers-landing-catacombs:twisting-tunnels-2"
@@ -151,6 +151,8 @@
       roomId: "wehnimers-landing-catacombs:sewer-north-1"
     - direction: south
       roomId: "wehnimers-landing-catacombs:sewer-south-1"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:sewer-east-1"
 - id: sewer-north-1
   title: Abandoned Sewer
   description: "This tunnel has obviously been neglected for a number of years.  The mortar is falling out from around many of the bricks, some of which are broken.  Much of the floor is covered with various mosses and slimes, puddles of stagnant water, and many kinds of disgusting creepy-crawlies."
@@ -233,3 +235,167 @@
   exits:
     - direction: south
       roomId: "wehnimers-landing-catacombs:sewer-north-9"
+- id: sewer-south-1
+  title: Abandoned Sewer
+  description: "This tunnel has obviously been neglected for a number of years.  The mortar is falling out from around many of the bricks, some of which are broken.  Much of the floor is covered with various mosses and slimes, puddles of stagnant water, and many kinds of disgusting creepy-crawlies."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewers-nexus"
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-south-2"
+- id: sewer-south-2
+  title: Abandoned Sewer
+  description: "A faint light trickles in through the cracks in the ceiling, as the tunnel continues to drop.  In the distance, you can hear the faint scratching sounds of vermin being about their business."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-south-1"
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-south-3"
+- id: sewer-south-3
+  title: Abandoned Sewer
+  description: "You carefully pick your way around the bits and pieces of debris.  Just thinking about the nature of this debris makes you a bit nauseous.  The smell of the place is revolting, making matters even worse."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-south-2"
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-south-4"
+- id: sewer-south-4
+  title: Abandoned Sewer
+  description: "The tunnel slopes gently downward, and much of the floor is shattered and broken.  You could easily do without the slight movement of the air, as it only brings ever more appalling scents to your attention."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-south-3"
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-south-5"
+- id: sewer-south-5
+  title: Abandoned Sewer
+  description: "A faint light trickles in through the cracks in the ceiling, as the tunnel continues to drop.  In the distance, you can hear the faint scratching sounds of vermin being about their business."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-south-4"
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-south-6"
+- id: sewer-south-6
+  title: Abandoned Sewer
+  description: "The openings of small pipes are visible through the muck on the walls.  To judge from the smell, they used to deliver raw sewage into this main tunnel.  The tunnel continues to descend, as the darkness and humidity seem to close in around you."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-south-5"
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-south-7"
+- id: sewer-south-7
+  title: Abandoned Sewer
+  description: "There is a small bit of sludgy water pouring out of one of the many small pipes.  It has collected into a dark slimy looking pool here, with a small trickle of filth oozing on down the tunnel.  There is just enough room to pick your way around it as you continue on deeper into the earth."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-south-6"
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-south-8"
+- id: sewer-south-8
+  title: Abandoned Sewer
+  description: "It appears that some of the ceiling has fallen, partially damming up the noxious liquid that could only be called water by a distant stretch of the imagination.  You shudder, as you realize that in order to pass, you are going to have to wade, for at least a few feet."
+  npcs:
+    - id: "wehnimers-landing-catacombs:giantrat"
+      respawnChance: 50
+      maxLoad: 5
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-south-7"
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-south-9"
+- id: sewer-south-9
+  title: Abandoned Sewer
+  description: "The trickle of sludge begins to move a bit faster, as the slope steepens.  The small pipes in the walls grow fewer, but no less filthy.  You can feel a touch of moving air, perhaps a bit fresher than that which you've grown used to breathing."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-south-8"
+    - direction: south
+      roomId: "wehnimers-landing-catacombs:sewer-south-10"
+- id: sewer-south-10
+  title: Abandoned Sewer
+  description: "The air smells unbelievably fresh, and you inhale great gasping breaths, having nearly forgotten what fresh air smells like.  You seem to have reached the end of the tunnel, as it empties out into a large underground river.  The slope is quite steep, and the small stream of sludge would be racing along, if it was any less thick."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-catacombs:sewer-south-9"
+- id: sewer-east-1
+  title: Abandoned Sewer
+  description: "This tunnel has obviously been neglected for a number of years.  The mortar is falling out from around many of the bricks, some of which are broken.  Much of the floor is covered with various mosses and slimes, puddles of stagnant water, and many kinds of disgusting creepy-crawlies."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:sewers-nexus"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:sewer-east-2"
+- id: sewer-east-2
+  title: Abandoned Sewer
+  description: "A faint light trickles in through the cracks in the ceiling, as the tunnel continues to drop.  In the distance, you can hear the faint scratching sounds of vermin being about their business."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:sewer-east-1"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:sewer-east-3"
+- id: sewer-east-3
+  title: Abandoned Sewer
+  description: "You carefully pick your way around the bits and pieces of debris.  Just thinking about the nature of this debris makes you a bit nauseous.  The smell of the place is revolting, making matters even worse."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:sewer-east-2"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:sewer-east-4"
+- id: sewer-east-4
+  title: Abandoned Sewer
+  description: "The tunnel slopes gently downward, and much of the floor is shattered and broken.  You could easily do without the slight movement of the air, as it only brings ever more appalling scents to your attention."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:sewer-east-3"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:sewer-east-5"
+- id: sewer-east-5
+  title: Abandoned Sewer
+  description: "A faint light trickles in through the cracks in the ceiling, as the tunnel continues to drop.  In the distance, you can hear the faint scratching sounds of vermin being about their business."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:sewer-east-4"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:sewer-east-6"
+- id: sewer-east-6
+  title: Abandoned Sewer
+  description: "The openings of small pipes are visible through the muck on the walls.  To judge from the smell, they used to deliver raw sewage into this main tunnel.  The tunnel continues to descend, as the darkness and humidity seem to close in around you."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:sewer-east-5"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:sewer-east-7"
+- id: sewer-east-7
+  title: Abandoned Sewer
+  description: "There is a small bit of sludgy water pouring out of one of the many small pipes.  It has collected into a dark slimy looking pool here, with a small trickle of filth oozing on down the tunnel.  There is just enough room to pick your way around it as you continue on deeper into the earth."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:sewer-east-6"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:sewer-east-8"
+- id: sewer-east-8
+  title: Abandoned Sewer
+  description: "It appears that some of the ceiling has fallen, partially damming up the noxious liquid that could only be called water by a distant stretch of the imagination.  You shudder, as you realize that in order to pass, you are going to have to wade, for at least a few feet."
+  npcs:
+    - id: "wehnimers-landing-catacombs:giantrat"
+      respawnChance: 50
+      maxLoad: 5
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:sewer-east-7"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:sewer-east-9"
+- id: sewer-east-9
+  title: Abandoned Sewer
+  description: "The trickle of sludge begins to move a bit faster, as the slope steepens.  The small pipes in the walls grow fewer, but no less filthy.  You can feel a touch of moving air, perhaps a bit fresher than that which you've grown used to breathing."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:sewer-east-8"
+    - direction: east
+      roomId: "wehnimers-landing-catacombs:sewer-east-10"
+- id: sewer-east-10
+  title: Abandoned Sewer
+  description: "The air smells unbelievably fresh, and you inhale great gasping breaths, having nearly forgotten what fresh air smells like.  You seem to have reached the end of the tunnel, as it empties out into a large underground river.  The slope is quite steep, and the small stream of sludge would be racing along, if it was any less thick."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-catacombs:sewer-east-9"

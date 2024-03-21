@@ -90,7 +90,7 @@
     slot: "chest"
     level: 1
     itemLevel: 1
-    armor_type: 1,
+    armor_type: 1
     stats:
       armor: 500
 
@@ -190,33 +190,27 @@
 
 - id: potionhealth1
   name: "a pink colored potion"
-  roomDesc: "a green-colored potion"
+  roomDesc: "a pink colored potion"
   keywords: [ "potion", "health" ]
-  type: POTION
-  metadata:
-    level: 1
-    # usable has two variants: spell, and effect
+  behaviors:
     usable:
-      # this is the spell variant, you specify a skill of type SPELL
       spell: "potion"
-      # charges/destroyOnDepleted lets you create consumable items
-      # without specifying charges the item can be used forever
       charges: 5
       destroyOnDepleted: true
-      # cooldown before item can be used again
       cooldown: 30
-      # spell configuration, spell can access it via this.options
       options:
         restores: 30
         stat: "health"
+  type: POTION
+  metadata:
+    level: 1
+
 
 - id: potionstrength1
   name: "a hazy orange potion"
   roomDesc: "a hazy orange potion"
   keywords: [ "potion", "strength" ]
-  type: POTION
-  metadata:
-    level: 1
+  behaviors:
     usable:
       # this is the effect variant, you specify an effect name instead of a spell
       effect: "potion.buff"
@@ -230,6 +224,10 @@
       state:
         magnitude: 10
         stat: "strength"
+  type: POTION
+  metadata:
+    level: 1
+
 
 - id: bladeofranvier
   name: "a massive blade"
@@ -342,7 +340,7 @@
   metadata:
     level: 1
     baseWeapon: 'weapon_broadsword'
-    slot: 'hands'
+    slot: 'wield'
     itemLevel: 1
     quality: common
     weapon_type: 'ONE_HANDED_EDGED'

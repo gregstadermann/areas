@@ -1,6 +1,6 @@
 - id: rat
   keywords: ['rat']
-  name: "a rat"
+  name: "a giant rat"
   level: 2
   description: "The rat's beady red eyes dart frantically, its mouth foaming as it scampers about."
   script: 'rat'
@@ -18,6 +18,7 @@
     constitution: 0
     AS: 34
     DS: 0
+    AT: 1
 - id: wiseoldman
   keywords: ["wise", "old", "man"]
   name: "an old man"
@@ -33,6 +34,7 @@
 - id: trainingdummy
   keywords: ["dummy", "target", "practice"]
   level: 2
+  script: 'dummy'
   name: "a training dummy"
   attributes:
     health: 100
@@ -41,6 +43,7 @@
     quickness: 0
     AS: 30
     DS: 0
+    AT: 1
   behaviors:
     combat: true
     ranvier-aggro:
@@ -68,6 +71,7 @@
   keywords: ["boss", "target", "dummy", "practice"]
   name: "the boss training dummy"
   level: 5
+  script: 'dummy'
   description: >-
     This dummy is significantly larger than the others. Bright red with a monstrous figure it lumbers around the area
     with a great echoing stomp. Where the other target dummies have a bullseye this dummy has a yellow exclamation mark.
@@ -78,6 +82,7 @@
     quickness: 0
     AS: 60
     DS: 25
+    AT: 1
   behaviors:
     combat: true
     lootable:
@@ -121,12 +126,14 @@
 - id: aggro-player-test
   keywords: ["test", "aggro", "dummy"]
   level: 2
+  script: 'dummy'
   name: "a player-aggressive training dummy"
   description: >-
     This NPC is aggressive towards players but not other NPCs. Be careful.
   attributes:
     AS: 0
     DS: 0
+    AT: 1
     health: 120
     strength: 12
     constitution: 5
@@ -138,12 +145,14 @@
 - id: aggro-npc-test
   keywords: ["test", "aggro", "dummy"]
   level: 2
+  script: 'dummy'
   name: "a self-hating training dummy"
   description: >-
     This NPC is aggressive towards other NPCs but not to the player.
   attributes:
     AS: 0
     DS: 0
+    AT: 1
     health: 100
     strength: 15
     constitution: 5
