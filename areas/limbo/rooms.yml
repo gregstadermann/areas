@@ -146,7 +146,7 @@
   metadata:
     commands: [ 'roomtest' ]
   items:
-    - id: "limbo:test_key"
+    - id: "limbo:test-key"
   exits:
     - roomId: "limbo:ancientwayshrine"
       direction: up
@@ -160,7 +160,7 @@
   title: "Locked room with key"
   description: This room requires a key to get into
   items:
-    - id: "limbo:locked_chest"
+    - id: "limbo:locked-chest"
       respawnChance: 5
       replaceOnRespawn: true
   exits:
@@ -168,6 +168,6 @@
       direction: west
   doors:
     "limbo:context":
-      lockedBy: "limbo:test_key"
+      lockedBy: "limbo:test-key"
       locked: true
       closed: true

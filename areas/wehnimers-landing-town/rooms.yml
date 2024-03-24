@@ -4,6 +4,8 @@
   coordinates: [0, 0, 0]
   description: "This is the heart of the main square of Wehnimer's Landing.  The impromptu shops of the bazaar are clustered around this central gathering place, where townsfolk, travellers, and adventurers meet to talk, conspire or raise expeditions to the far-flung reaches of Elanith.  At the north end of the space, an old well, with moss-covered stones and a craggy roof, is shaded by a strong, robust tree.  The oak is tall and straight, and it is apparent that the roots run deep."
   npcs: [mapped:squirrel]
+  items:
+    - id: "wehnimers-landing-town:round-silver-barrel"
   exits:
     - direction: well
       hidden: true
@@ -56,6 +58,7 @@
   title: Wehnimer's, North Ring Rd.
   coordinates: [0, 3, 0]
   description: "The cobbled road girds the town along the inner side of the northern palisade.  Just to the north stand the twin sentinels of the gate's guardtowers.  Guardsmen come and go through the main gates, keeping a close eye on the people of all races who move to and fro.  Opposite the gates, you see the shop of Dakris the Furrier."
+
 - id: lands-end-road
   title: Wehnimer's, Land's End Rd.
   coordinates: [0, 4, 0]
@@ -69,17 +72,21 @@
   title: East Tower
   description: "The tower is a massive structure of stone and wood, rising high above the palisade.  A large wooden door is set into the wall, and a small window is set high above it.  A wooden staircase leads up to the door.  You also see a large wooden door."
   items:
-   - id: "wehnimers-landing-town:black_weapon_sling"
+   - id: "wehnimers-landing-town:black-weapon-sling"
      respawnChance: 50
   exits:
     - direction: out
       roomId: "wehnimers-landing-town:lands-end-road"
+
 - id: west-tower
   title: West Tower
   description: "The tower is a massive structure of stone and wood, rising high above the palisade.  A large wooden door is set into the wall, and a small window is set high above it.  A wooden staircase leads up to the door.  You also see a large wooden door."
+  items:
+    - id: "wehnimers-landing-town:white-flask"
   exits:
     - direction: out
       roomId: "wehnimers-landing-town:lands-end-road"
+
 - id: raging-thrak-inn-barroom
   title: Raging Thrak Inn, Barroom
   exits:
@@ -91,17 +98,19 @@
     - roomId: "wehnimers-landing-town:raging-thrak-inn-trophy-room"
       direction: west
   description: "A long and polished wooden bar occupies the whole north wall of the tavern here in The Raging Thrak, which is named for the fiery proprietor.  Hard wooden chairs, tables and benches are spaced liberally throughout the room.  The tavern does good business, and seems to be at least half full, no matter what time of day."
+
 - id: raging-thrak-inn-dining-room
   title: Raging Thrak Inn, Dining Room
   description: "Loud and abusive noises emanate from behind the swinging kitchen doors, much to the laughing delight of some of the customers, and to the chagrin of others.  Tapestries hanging from the walls depict soothing idyllic wildlife scenes.  Hard wooden tables and chairs are placed evenly, allowing enough space for the cook and wait servants to pass."
   exits:
     - roomId: "wehnimers-landing-town:raging-thrak-inn-barroom"
       direction: south
+
 - id: raging-thrak-inn-trophy-room
   title: Raging Thrak Inn, Trophy Room
   description: "Tiny smudges of soot mar the fieldstones used to create the grand fireplace in this cozy room.  A collection of plaques hangs above an immense grey marble mantel cluttered with trophy cups and bowls.  Fashioned from a single stone slab, the hearth extends to an impressive black bear rug with its maw frozen in a silent roar.  Several overstuffed wingback chairs, each covered in deep jewel-tone chintz, are scattered about the room.  Against the back wall, a tall glass-front curio houses several ancient mementos and a thrak hide curtain hangs nearby."
   items:
-    - id: "limbo:heavy_backpack"
+    - id: "limbo:heavy-backpack"
       respawnChance: 50
   exits:
     - roomId: "wehnimers-landing-town:raging-thrak-inn-barroom"
@@ -120,7 +129,7 @@
   description: >-
     You are in a large room with a high ceiling. The walls are lined with bookshelves filled with tomes and scrolls. A large desk sits in the center of the room, covered in papers and books. A large window looks out over the town square. A large chest sits in the corner of the room.
   items:
-    - id: "limbo:zoso_chest"
+    - id: "limbo:zoso-chest"
     - id: "wehnimers-landing-town:twisted-doorframe"
   exits:
     - roomId: "limbo:training1"
@@ -132,7 +141,7 @@
       direction: down
   doors:
     "limbo:training1":
-      lockedBy: "limbo:zoso_key"
+      lockedBy: "limbo:zoso-key"
       locked: true
       closed: true
 - id: "zoso-tower-basement"
@@ -143,7 +152,11 @@
     - roomId: "wehnimers-landing-town:zoso-tower"
       direction: up
   items:
-    - id: "limbo:plain_silver_pin"
-    - id: "limbo:floor_dragging_robe"
-    - id: "limbo:carved_walking_staff"
-    - id: "limbo:anonymous_grey_cloak"
+    - id: "limbo:plain-silver-pin"
+    - id: "limbo:floor-dragging-robe"
+    - id: "limbo:carved-walking-staff"
+    - id: "limbo:anonymous-grey-cloak"
+    - id: "wehnimers-landing-town:eonake-sledgehammer"
+    - id: "wehnimers-landing-town:mithril-studded-vultite-shield"
+    - id: "limbo:acrobat-bracelet"
+    - id: "limbo:zoso-pipe"

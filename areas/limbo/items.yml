@@ -1,4 +1,4 @@
-- id: "carved_walking_staff"
+- id: "carved-walking-staff"
   name: "a walking staff carved end-to-end with vines and flowers"
   type: WEAPON
   roomDesc: "a walking staff carved end-to-end with vines and flowers"
@@ -20,7 +20,7 @@
       level: 1
       itemLevel: 1
 
-- id: "gleeman_cloak"
+- id: "gleeman-cloak"
   name: "a cloak that seems to be made from a mass of patches in odd shapes and sizes"
   type: CONTAINER
   roomDesc: "a cloak that seems to be made from a mass of patches in odd shapes and sizes"
@@ -33,7 +33,7 @@
     level: 1
     itemLevel: 100
 
-- id: "anonymous_grey_cloak"
+- id: "anonymous-grey-cloak"
   name: "an anonymous grey cloak"
   type: CONTAINER
   roomDesc: "an anonymous grey cloak"
@@ -51,7 +51,7 @@
       value: 30
       currency: gold
 
-- id: "acrobat_bracelet"
+- id: "acrobat-bracelet"
   name: "a circle of carved age-dark ivory"
   roomDesc: "a circle of carved aged-dark ivory"
   keywords: ["circle", "age-dark", "ivory", "bracelet"]
@@ -65,7 +65,7 @@
     value: 1000
     currency: gold
 
-- id: "plain_silver_pin"
+- id: "plain-silver-pin"
   name: "a plain silver pin"
   roomDesc: "a plain silver pin"
   keywords: ["pin", "silver"]
@@ -79,7 +79,7 @@
     value: 10
     currency: gold
 
-- id: "floor_dragging_robe"
+- id: "floor-dragging-robe"
   name: "a floor-dragging black robe"
   type: ARMOR
   roomDesc: "a floor-dragging black robe"
@@ -270,7 +270,7 @@
       value: 30
       currency: gold
 
-- id: test_key
+- id: test-key
   name: "oddly shaped key"
   keywords: ["key", "odd", "oddly", "shaped"]
   roomDesc: "an odd-looking key"
@@ -278,7 +278,7 @@
   metadata:
     quality: common
 
-- id: locked_chest
+- id: locked-chest
   type: CONTAINER
   name: "a locked wooden chest"
   roomDesc: "a wooden chest"
@@ -286,12 +286,12 @@
   items: [ "limbo:rustysword" ]
   closed: true
   locked: true
-  lockedBy: "limbo:test_key"
+  lockedBy: "limbo:test-key"
   maxItems: 5
   metadata:
     noPickup: true
 
-- id: "zoso_cloak"
+- id: "zoso-cloak"
   type: CONTAINER
   name: "a star-covered cloak"
   roomDesc: "a star-covered cloak"
@@ -302,17 +302,17 @@
   maxItems: 100
   metadata:
     quality: epic
-    slot: "back"
+    slot: "cloak"
     level: 20
     itemLevel: 20
     stats:
       armor: 500
     sellable:
-      value: 3000000000
+      value: 300000000t_key
       currency: gold
     noPickup: false
 
-- id: "zoso_staff"
+- id: "zoso-staff"
   name: "an ancient gnarled staff"
   type: WEAPON
   roomDesc: "an ancient gnarled staff"
@@ -343,20 +343,20 @@
     slot: 'wield'
     itemLevel: 1
     quality: common
-    weapon_type: 'ONE_HANDED_EDGED'
+    weapono_type: 'ONE_HANDED_EDGED'
     minDamage: 4
     maxDamage: 20
     speed: 8.00
     stats:
       critical: 1
-- id: "zoso_key"
+- id: "zoso-key"
   name: "a weird key"
   keywords: ["key", "weird" ]
   roomDesc: "a weird looking key"
   description: "Zoso's Tower is enscribed upon the key"
   metadata:
     quality: epic
-- id: "zoso_boots"
+- id: "zoso-boots"
   name: "some black leather boots"
   type: ARMOR
   roomDesc: "some black leather boots"
@@ -364,7 +364,7 @@
   description: "some black leather boots"
   metadata:
     armor_type: 3
-    quality: epic
+    quality: common
     slot: "feet"
     level: 1
     itemLevel: 1
@@ -373,7 +373,8 @@
     sellable:
       value: 1
       currency: gold
-- id: "zoso_pipe"
+
+- id: "zoso-pipe"
   name: "a long-stemmed pipe"
   roomDesc: "a long-stemmed pipe"
   keywords: ["pipe"]
@@ -385,7 +386,8 @@
     sellable:
       value: 1
       currency: gold
-- id: "zoso_robes"
+
+- id: "zoso-robes"
   name: "a set of flowing dark blue robes"
   type: ARMOR
   roomDesc: "a set of flowing dark blue robes"
@@ -402,20 +404,22 @@
     sellable:
       value: 300000000
       currency: gold
-- id: "zoso_chest"
+
+- id: "zoso-chest"
   type: CONTAINER
   name: "a sturdy chest"
   roomDesc: "a sturdy chest"
   keywords: [ "sturdy", "chest" ]
   description: "The old chest is well made and sturdy"
-  items: [ "limbo:zoso_robes", "limbo:zoso_boots", "limbo:zoso_key", "limbo:zoso_staff", "limbo:zoso_cloak", "limbo:broadsword", "limbo:bladeofranvier" ]
+  items: [ "limbo:zoso-robes", "limbo:zoso-boots", "limbo:zoso-key", "limbo:zoso-staff", "limbo:zoso-cloak", "limbo:broadsword", "limbo:bladeofranvier" ]
   closed: true
   maxItems: 50
   maxSize: 50
   metadata:
     noPickup: true
     quality: epic
-- id: "heavy_backpack"
+
+- id: "heavy-backpack"
   type: CONTAINER
   name: "a heavy backpack"
   roomDesc: "a heavy backpack"

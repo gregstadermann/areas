@@ -1,4 +1,4 @@
-- id: "black_weapon_sling"
+- id: "black-weapon-sling"
   type: CONTAINER
   name: "a black leather weapons sling"
   roomDesc: "a black leather weapons sling"
@@ -31,6 +31,7 @@
     sellable:
       value: 30
       currency: gold
+
 - id: leatherbreastplate
   name: "leather breastplate"
   type: ARMOR
@@ -48,6 +49,7 @@
     sellable:
       value: 100
       currency: gold
+
 - id: metalbreastplate
   name: "metal breastplate"
   type: ARMOR
@@ -65,6 +67,7 @@
     sellable:
       value: 1000
       currency: gold
+
 - id: chainshirt
   name: "chain shirt"
   type: ARMOR
@@ -82,6 +85,7 @@
     sellable:
       value: 750
       currency: gold
+
 - id: "raging-thrak-inn"
   name: "the Raging Thrak Inn"
   roomDesc: "the Raging Thrak Inn"
@@ -89,6 +93,7 @@
   description: "A small, cozy inn with a warm fire and a few tables."
   metadata:
     noPickup: true
+
 - id: "ivy-tower"
   name: "an ivy-covered white monir tower"
   roomDesc: "an ivy-covered white monir tower"
@@ -96,6 +101,7 @@
   description: "A tall, white tower covered in ivy."
   metadata:
     noPickup: true
+
 - id: "granite-statue"
   name: "a polished granite statue"
   roomDesc: "a polished granite statue"
@@ -103,6 +109,17 @@
   description: "A granite statue of a warrior."
   metadata:
       noPickup: true
+
+- id: "round-silver-barrel"
+  name: "a round silver-banded barrel"
+  type: CONTAINER
+  roomDesc: "a round silver-banded barrel"
+  keywords: ["barrel", "silver-banded"]
+  description: "A round silver-banded barrel."
+  maxItems: 100
+  metadata:
+    noPickup: true
+
 - id: "twisted-doorframe"
   name: "an oddly twisted redstone doorframe"
   roomDesc: "an oddly twisted redstone doorframe"
@@ -125,3 +142,28 @@
     minDamage: 20
     maxDamage: 40
     speed: 5.0
+
+- id: "mithril-studded-vultite-shield"
+  name: "a large mithril-studded vultite shield"
+  type: SHIELD
+  roomDesc: "a large mithril-studded vultite shield"
+  keywords: ["shield", "vultite", "mithril-studded", "large"]
+  description: "a large mithril-studded vultite shield"
+  metadata:
+    bonus: 20
+    quality: epic
+
+- id: "white-flask"
+  name: "a white flask"
+  roomDesc: "a white flask"
+  keywords: ["flask", "white"]
+  description: "A white flask"
+  metadata:
+    slot: "pin"
+    quality: common
+    level: 1
+    itemLevel: 1
+    sellable:
+    value: 10
+    currency: gold
+
