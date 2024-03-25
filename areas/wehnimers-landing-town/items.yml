@@ -167,3 +167,13 @@
     value: 10
     currency: gold
 
+- id: "dark-ladder"
+  name: "a dark ladder leaning against a large iron-plated tower"
+  roomDesc: "a dark ladder leaning against a large iron-plated tower"
+  keywords: ["tower", "iron-plated", "large"]
+  description: "a dark ladder leaning against a large iron-plated tower"
+  metadata:
+    noPickup: true
+
+
+

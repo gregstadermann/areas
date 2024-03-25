@@ -10,14 +10,20 @@
     - direction: well
       hidden: true
       roomId: "wehnimers-landing-town:old-well"
+
 - id: tsw
   title: Town Square, West
   coordinates: [-1, 0, 0]
   description: "Here in the midst of the town stretches the cobblestoned main bazaar, its serpentine lanes abuzz with traders bartering, bickering, and hawking their wares.  The freewheeling vendors in the bazaar provide a lively alternative to the somewhat stodgier merchants whose shops border the square.  The gilded but peeling stone facade of the First Elanith Bank dominates this side of the square."
+  exits:
+    - direction: west
+      roomId: "wehnimers-landing-town:grocer"
+
 - id: tse
   title: Town Square, East
   coordinates: [1, 0, 0]
   description: "Here in the center of a broad plaza near the commercial area of the bazaar stands the impressive facade of the slate-roofed Moot Hall, where the citizens of Wehnimer's Landing hold various official, religious and social functions.  Facing the square are some of the town's more prosperous and bustling shops."
+
 - id: tsnw
   title: Town Square, Northwest
   coordinates: [-1, 1, 0]
@@ -33,10 +39,14 @@
     - direction: tower
       roomId: "wehnimers-landing-town:zoso-tower"
       hidden: true
+    - direction: north
+      roomId: "wehnimers-landing-town:bathhouse"
+
 - id: tsne
   title: Town Square, Northeast
   coordinates: [1, 1, 0]
   description: "The entrance to Tykel's Arms, its heavy door bounded by iron-barred windows, dominates this corner of the square.  All manner of citizens pass by, moving among the solid, multistoried wooden buildings that surround the bazaar.  Just to the southwest can be seen the tree-shaded heart of the square, where citizens and adventurers gather for socializing, healing and rest.  You also see a narrow alleyway."
+
 - id: tsse
   title: Town Square, Southeast
   coordinates: [1, -1, 0]
@@ -48,26 +58,139 @@
 
 - id: bathhouse
   title: Wehnimer's, Talon St.
-  coordinates: [-1, 2, 0]
   description: "The street runs between the northern palisade and the central square to the south and east.  The traffic is varied here, as shoppers, traders, travelers and merchants mix with the ever-present and watchful militiamen.  The pristine walls of the Stone Baths occupy nearly the entire block.  You also see a brightly lit small painted wagon and a tall black bulwark tower."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-town:wl-north-ring-road-01"
+    - direction: south
+      roomId: "wehnimers-landing-town:tsnw"
+
 - id: wl-north-ring-road-01
-  title: Wehnimer's, Land's End Rd.
+  title: Wehnimer's, North Ring Rd..
   coordinates: [-1, 3, 0]
   description: "The road turns gradually at this point as it forms the northwest corner of the city.  The main path curves along the north and west walls, and another leads south between the buildings.  The massive oak and modwir logs of the city palisade tower overhead.  You also see an old weathered cart with some stuff on it."
+  exits:
+    - direction: southwest
+      roomId: "wehnimers-landing-town:observation-tower"
+    - direction: south
+      roomId: "wehnimers-landing-town:bathhouse"
+
 - id: wl-north-ring-road-02
   title: Wehnimer's, North Ring Rd.
   coordinates: [0, 3, 0]
   description: "The cobbled road girds the town along the inner side of the northern palisade.  Just to the north stand the twin sentinels of the gate's guardtowers.  Guardsmen come and go through the main gates, keeping a close eye on the people of all races who move to and fro.  Opposite the gates, you see the shop of Dakris the Furrier."
+  exits:
+    - direction: furrier
+      roomId: "wehnimers-landing-town:dakris-furrier"
+      hidden: true
+    - direction: north
+      roomId: "wehnimers-landing-town:lands-end-road"
+
+- id: dakris-furrier
+  title: Shop of Dakris the Furrier
+  description: ""
+  exits:
+    - direction: out
+      roomId: "wehnimers-landing-town:wl-north-ring-road-02"
+
+- id: wl-west-ring-road-01
+  title: Wehnimer's, West Ring Rd.
+  coordinates: [-3, -1, 0]
+  description: "Traffic is almost nonexistent at night on this portion of West Ring Road.  Most of the people still out in the streets seem to be using the busier roads that lie to the north and south, leading to the square.  A few warehouses and smaller shops line the way here."
+  items:
+    - id: "wl-outside-gates:large-wooden-gate"
+    - id: "wehnimers-landing-town:dark-ladder"
+  exits:
+    - direction: gate
+      roomId: "wl-outside-gates:exterior-03"
+      hidden: true
+      leaveMessage: "just came through a large wooden gate."
+    - direction: north
+      roomId: "wehnimers-landing-town:wl-west-ring-road-03"
+    - direction: south
+      roomId: "wehnimers-landing-town:wl-west-ring-road-05"
+
+- id: observation-tower
+  title: "Wehnimer's, West Ring Rd."
+  description: "The tower is a massive structure of stone and wood, rising high above the palisade.  A large wooden door is set into the wall, and a small window is set high above it.  A wooden staircase leads up to the door.  You also see a large wooden door."
+  items:
+    - id: "wehnimers-landing-town:dark-ladder"
+  exits:
+    - direction: northeast
+      roomId: "wehnimers-landing-town:wl-north-ring-road-01"
+    - direction: south
+      roomId: "wehnimers-landing-town:wl-west-ring-road-02"
+
+- id: grocer
+  title: "Wehnimer's, Winter St."
+  description: "A few shoppers, traders and local residents walk along this avenue, chatting in the night air or heading home.  On the west side of the road is the grocer's shop, where provisions, from the humblest sack of flour to the rarest varieties of Gnollish mushrooms, can be bought.  You also see a tall black bulwark tower."
+  exits:
+    - direction: east
+      roomId: "wehnimers-landing-town:tsw"
+    - direction: west
+      roomId: "wehnimers-landing-town:wl-west-ring-road-03"
+
+- id: wl-west-ring-road-02
+  title: "Wehnimer's, West Ring Rd."
+  description: "The road passes beneath the shadow of the palisade.  Before you sprawls a gaudily-painted structure, adorned with elaborate carvings depicting scenes of commerce and lit by polished brass lamps.  This is the Merchant's Guild, where the business people of town, from wealthy traders to lowly street peddlers, meet to discuss matters of mutual concern.  You also see a two-story dark brick edifice."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-town:observation-tower"
+    - direction: south
+      roomId: "wehnimers-landing-town:wl-west-ring-road-03"
+
+- id: wl-west-ring-road-03
+  title: "Wehnimer's, West Ring Rd."
+  description: "The lane to the east leads into the heart of town and the main square.  The back wall of the grocer's shop borders the road, its wide door surrounded by piles of rough gunny sacks and stacks of wooden crates, some empty, others still to be unpacked.  You also see a tall mithril postern gate."
+  exits:
+    - direction: east
+      roomId: "wehnimers-landing-town:grocer"
+    - direction: north
+      roomId: "wehnimers-landing-town:wl-west-ring-road-02"
+    - direction: south
+      roomId: "wehnimers-landing-town:wl-west-ring-road-01"
+
+- id: wl-west-ring-road-04
+  title: "Wehnimer's, West Gate 04"
+  description: ""
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-town:wl-west-ring-road-03"
+    - direction: south
+      roomId: "wehnimers-landing-town:wl-west-ring-road-05"
+
+
+- id: wl-west-ring-road-05
+  title: "Wehnimer's, West Ring Rd."
+  description: "The road bends to conform to the inside curve of the southern and western walls of the high modwir log palisades, which converge here.  A whiff of the scents of the marketplace rises from a narrow lane to the east.  You also see a dark ladder leaning against a large iron-plated tower, a brick pathway leading to an ornate silver gate and an ivy-bordered silver sign."
+  exits:
+    - direction: north
+      roomId: "wehnimers-landing-town:wl-west-ring-road-04"
+    - direction: southeast
+      roomId: "wehnimers-landing-town:music-shoppe"
+
+- id: music-shoppe
+  title: "Wehnimer's, South Ring Rd"
+  description: "The quiet of the moonlit street is broken by the sound of metal bouncing against metal.  A small group of rough-looking citizens gather in the shadow of the buildings, apparently busy at some gambling game.  From one small storefront comes the sound of a lilting melody being picked out on a lute.  You also see an ornate wrought iron gate."
+  exits:
+    - direction: northwest
+      roomId: "wehnimers-landing-town:wl-west-ring-road-05"
 
 - id: lands-end-road
   title: Wehnimer's, Land's End Rd.
-  coordinates: [0, 4, 0]
   description: "Vigilant guardsmen scrutinize the citizens and travelers arriving and departing through the wide gates spanning the land route into Wehnimer's Landing.  The frenetic pace of the city to the south is a far cry from the deceptive calm of the wilds of Elanith outside.  Two daunting towers survey the countryside and protect the town, flanking the road to the east and west."
   exits:
+    - direction: south
+      roomId: "wehnimers-landing-town:wl-north-ring-road-02"
     - direction: east tower
       roomId: "wehnimers-landing-town:east-tower"
     - direction: west tower
       roomId: "wehnimers-landing-town:west-tower"
+    - direction: gates
+      roomId: "wl-outside-gates:outside-gates"
+      hidden: true
+      leaveMessage: "just came through some reinforced wooden gates."
+
 - id: east-tower
   title: East Tower
   description: "The tower is a massive structure of stone and wood, rising high above the palisade.  A large wooden door is set into the wall, and a small window is set high above it.  A wooden staircase leads up to the door.  You also see a large wooden door."
@@ -124,8 +247,9 @@
     - direction: rope
       hidden: true
       roomId: "wehnimers-landing-catacombs:beneath-well"
+
 - id: "zoso-tower"
-  title: "Zoso's Tower"
+  title: "Zoso's Tower, Entry"
   description: >-
     You are in a large room with a high ceiling. The walls are lined with bookshelves filled with tomes and scrolls. A large desk sits in the center of the room, covered in papers and books. A large window looks out over the town square. A large chest sits in the corner of the room.
   items:
@@ -139,13 +263,24 @@
       direction: out
     - roomId: "wehnimers-landing-town:zoso-tower-basement"
       direction: down
+    - roomId: "wehnimers-landing-town:zoso-tower-magical-workshop"
+      direction: up
   doors:
     "limbo:training1":
       lockedBy: "limbo:zoso-key"
       locked: true
       closed: true
+- id: "zoso-tower-magical-workshop"
+  title: "Zoso's Tower, Magical Workshop"
+  description: >-
+      You are in a wizard's magical workshop.  Aparate and strange devices line the walls.  A large table sits in the center of the room, covered in alchemical equipment and magical components.  A large bookshelf sits in the corner of the room, filled with tomes and scrolls.
+  items:
+  exits:
+    - roomId: "wehnimers-landing-town:zoso-tower"
+    - direction: down
+
 - id: "zoso-tower-basement"
-  title: "Zoso's Tower Basement"
+  title: "Zoso's Tower, Basement"
   description: >-
     You are in a storage room.  The walls are lined with various items and boxes.
   exits:

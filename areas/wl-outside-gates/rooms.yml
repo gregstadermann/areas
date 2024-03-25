@@ -1,0 +1,39 @@
+- id: outside-gates
+  title: "Wehnimer's, Outside Gate"
+  coordinates: [0, 0, 0]
+  description: "Citizens, merchants and assorted dregs of society jostle against you before the great wooden gates of Wehnimer's Landing.  Harried guards and militiamen try to keep the chaos to a minimum, but it is hard to keep track of those entering, let alone leaving, this large trading post.  A dirt path encircling the wooden palisade of the town leads east and southwest.  Nailed prominently to the wooden wall beside the gate is a sign you really should read."
+  items:
+    - id: "wl-outside-gates:reinforced-wooden-gates"
+    - id: "wl-outside-gates:wayside-inn"
+  exits:
+    - direction: gates
+      roomId: "wehnimers-landing-town:lands-end-road"
+      hidden: true
+      leaveMessage: "just came through some reinforced wooden gates."
+
+- id: exterior-01
+  title: "Wehnimer's, Exterior"
+  coordinates: [-1, -1, 0]
+  description: "You are standing at the northwest corner of the Landing.  The path, which bends to the northeast as it moves along this section of the western wall of the fortified trading post.  To the west can be seen a dark forest while to the south can be seen a rolling plain of high grasses.  You also see a tall wooden archery tower and ."
+  items:
+    - id: "wl-outside-gates:path-to-wooded-glade"
+  exits:
+
+- id: exterior-02
+  title: "Wehnimer's, Exterior"
+  coordinates: [-1, -2, 0]
+  description: "As you progress on this north-south path, the dark forest to the west catches your eye.  A little forbidding in its primeval appearance, it is sure to offer a good source of small-game hunting.  You also see a mottled rolton hide tent."
+  exits:
+
+- id: exterior-03
+  title: "Wehnimer's, Exterior"
+  coordinates: [-1, -3, 0]
+  description: "The muted sounds of loud bartering from within Wehnimer's Landing, and the lonely calls of a pair of mated fenvaoks high up in the air vie for your attention as you march along the outer western edge of the town.  You also see a tall wooden archery tower and a reinforced large wooden gate."
+  items:
+    - id: "wl-outside-gates:large-wooden-gate"
+    - id: "wl-outside-gates:archery-tower"
+  exits:
+    - direction: gate
+      roomId: "wehnimers-landing-town:wl-west-ring-road-01"
+      hidden: true
+      leaveMessage: "just came through a large wooden gate."

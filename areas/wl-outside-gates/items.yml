@@ -1,0 +1,40 @@
+- id: "reinforced-wooden-gates"
+  name: "some reinforced wooden gates"
+  roomDesc: "some reinforced wooden gates"
+  keywords: ["gates", "reinforced", "wooden"]
+  description: "The gates are made of thick, sturdy wood, reinforced with iron bands."
+  metadata:
+    noPickup: true
+    hidden: true
+
+- id: "large-wooden-gate"
+  name: "a reinforced large wooden gate"
+  roomDesc: "a reinforced large wooden gate"
+  keywords: ["gate", "reinforced", "large", "wooden"]
+  description: "The gate is made of thick, sturdy wood, reinforced with iron bands."
+  metadata:
+    noPickup: true
+
+- id: "wayside-inn"
+  name: "the Wayside Inn"
+  roomDesc: "the Wayside Inn"
+  keywords: ["inn", "Wayside"]
+  description: "A small, cozy inn with a warm fire and a few tables."
+  metadata:
+    noPickup: true
+
+- id: "path-to-wooded-glade"
+  name: "a cobblestoned trail leading to a wooded glade"
+  roomDesc: "a cobblestoned trail leading to a wooded glade"
+  keywords: ["trail", "cobblestoned", "wooded", "glade"]
+  description: "The trail is made of cobblestones and leads into a dense forest."
+  metadata:
+    noPickup: true
+
+- id: "archery-tower"
+  name: "a tall wooden archery tower"
+  roomDesc: "a tall wooden archery tower"
+  keywords: ["tower", "archery", "wooden"]
+  description: "A tall wooden tower with a platform at the top for archers."
+  metadata:
+    noPickup: true
