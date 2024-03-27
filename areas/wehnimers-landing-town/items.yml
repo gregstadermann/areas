@@ -175,5 +175,20 @@
   metadata:
     noPickup: true
 
+- id: "east-tower"
+  name: "the east tower"
+  roomDesc: "the east tower"
+  keywords: ["east", "tower"]
+  description: "the east tower"
+  metadata:
+    noPickup: true
+
+- id: "west-tower"
+  name: "the west tower"
+  roomDesc: "the west tower"
+  keywords: ["west", "tower"]
+  description: "a dark ladder leaning against a large iron-plated tower"
+  metadata:
+    noPickup: true
 
 

@@ -78,7 +78,7 @@
 - id: wl-north-ring-road-02
   title: Wehnimer's, North Ring Rd.
   coordinates: [0, 3, 0]
-  description: "The cobbled road girds the town along the inner side of the northern palisade.  Just to the north stand the twin sentinels of the gate's guardtowers.  Guardsmen come and go through the main gates, keeping a close eye on the people of all races who move to and fro.  Opposite the gates, you see the shop of Dakris the Furrier."
+  description: "The cobbled road girds the town along the inner side of the northern palisade.  Just to the north stand the twin sentinels of the gate's guard towers.  Guardsmen come and go through the main gates, keeping a close eye on the people of all races who move to and fro.  Opposite the gates, you see the shop of Dakris the Furrier."
   exits:
     - direction: furrier
       roomId: "wehnimers-landing-town:dakris-furrier"
@@ -184,8 +184,10 @@
       roomId: "wehnimers-landing-town:wl-north-ring-road-02"
     - direction: east tower
       roomId: "wehnimers-landing-town:east-tower"
+      hidden: true
     - direction: west tower
       roomId: "wehnimers-landing-town:west-tower"
+      hidden: true
     - direction: gates
       roomId: "wl-outside-gates:outside-gates"
       hidden: true
@@ -231,7 +233,7 @@
 
 - id: raging-thrak-inn-trophy-room
   title: Raging Thrak Inn, Trophy Room
-  description: "Tiny smudges of soot mar the fieldstones used to create the grand fireplace in this cozy room.  A collection of plaques hangs above an immense grey marble mantel cluttered with trophy cups and bowls.  Fashioned from a single stone slab, the hearth extends to an impressive black bear rug with its maw frozen in a silent roar.  Several overstuffed wingback chairs, each covered in deep jewel-tone chintz, are scattered about the room.  Against the back wall, a tall glass-front curio houses several ancient mementos and a thrak hide curtain hangs nearby."
+  description: "Tiny smudges of soot mar the field stones used to create the grand fireplace in this cozy room.  A collection of plaques hangs above an immense grey marble mantel cluttered with trophy cups and bowls.  Fashioned from a single stone slab, the hearth extends to an impressive black bear rug with its maw frozen in a silent roar.  Several overstuffed wing-back chairs, each covered in deep jewel-tone chintz, are scattered about the room.  Against the back wall, a tall glass-front curio houses several ancient mementos and a thrak hide curtain hangs nearby."
   items:
     - id: "limbo:heavy-backpack"
       respawnChance: 50

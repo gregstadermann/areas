@@ -1,7 +1,7 @@
 - id: "reinforced-wooden-gates"
   name: "some reinforced wooden gates"
   roomDesc: "some reinforced wooden gates"
-  keywords: ["gates", "reinforced", "wooden"]
+  keywords: ["gate", "gates", "reinforced", "wooden"]
   description: "The gates are made of thick, sturdy wood, reinforced with iron bands."
   metadata:
     noPickup: true

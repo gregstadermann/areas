@@ -1,0 +1,18 @@
+- id: rolton
+  keywords: ["rolton"]
+  level: 5
+  name: "a rolton"
+  attributes:
+    health: 50
+    strength: 2
+    AS: 15
+    DS: 10
+    AT: 1
+    constitution: 1
+  behaviors:
+    combat: true
+    ranvier-wander:
+      interval: 20
+      areaRestricted: true
+  description: >-
+    The rolton is a large, shaggy creature with a thick coat of wool. It's eyes are large and dark, and it's horns are sharp and curved.
